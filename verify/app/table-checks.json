@@ -1,0 +1,263 @@
+{
+  "total": 51,
+  "passed": 51,
+  "failed": 0,
+  "errors": [],
+  "checks": [
+    {
+      "name": "Table Design tab appears after View",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Table Layout tab follows Table Design",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Table tabs before Help",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Table Design tab activates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Table Style Options show six checkboxes",
+      "pass": true,
+      "detail": "Header Row, Total Row, Banded Rows, First Column, Last Column, Banded Columns"
+    },
+    {
+      "name": "Table Styles gallery is inline in ribbon",
+      "pass": true,
+      "detail": "cards=26"
+    },
+    {
+      "name": "Table Design ribbon groups are visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Banded Rows checkbox changes table attr",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Banded Rows checkbox reflects new state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Blue Medium style card exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Applying table style updates table attrs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Header row uses theme tint",
+      "pass": true,
+      "detail": "color(srgb 0.824 0.867294 0.944471)"
+    },
+    {
+      "name": "All Borders writes cell border attribute",
+      "pass": true,
+      "detail": "1pt solid #000000"
+    },
+    {
+      "name": "Cell border renders computed style",
+      "pass": true,
+      "detail": "1px solid rgb(0, 0, 0)"
+    },
+    {
+      "name": "Shading palette has theme colors",
+      "pass": true,
+      "detail": "swatches=50"
+    },
+    {
+      "name": "Cell shading writes attribute",
+      "pass": true,
+      "detail": "#ffc000"
+    },
+    {
+      "name": "Cell shading renders background",
+      "pass": true,
+      "detail": "rgb(255, 192, 0)"
+    },
+    {
+      "name": "Borders and Shading dialog opens from group launcher",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Borders and Shading dialog has Borders and Shading tabs",
+      "pass": true,
+      "detail": "Borders,Shading"
+    },
+    {
+      "name": "Borders dialog All sets outer and inner cell borders",
+      "pass": true,
+      "detail": "{\"top\":\"1pt solid #000000\",\"bottom\":\"1pt solid #000000\",\"headerTop\":\"1pt solid #000000\"}"
+    },
+    {
+      "name": "Borders dialog Shading fills the whole table",
+      "pass": true,
+      "detail": "{\"count\":9,\"shaded\":9}"
+    },
+    {
+      "name": "Column resize handle appears on column edge",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Dragging column edge resizes first column",
+      "pass": true,
+      "detail": "208 -> 268"
+    },
+    {
+      "name": "Table Layout tab activates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Select Row creates a cell selection",
+      "pass": true,
+      "detail": "CellSelection"
+    },
+    {
+      "name": "Insert Below adds a row",
+      "pass": true,
+      "detail": "3 -> 4"
+    },
+    {
+      "name": "Insert Right adds a column",
+      "pass": true,
+      "detail": "3 -> 4"
+    },
+    {
+      "name": "Delete Rows removes a row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Merge Cells reduces cell count",
+      "pass": true,
+      "detail": "12 -> 11"
+    },
+    {
+      "name": "Split Cells restores cell count",
+      "pass": true,
+      "detail": "11 -> 12"
+    },
+    {
+      "name": "Split Table creates a second table",
+      "pass": true,
+      "detail": "1 -> 2"
+    },
+    {
+      "name": "AutoFit Window sets 100% width",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Distribute Columns Evenly sets column widths",
+      "pass": true,
+      "detail": "240px, 240px, 240px"
+    },
+    {
+      "name": "Cell alignment grid sets vertical and horizontal alignment",
+      "pass": true,
+      "detail": "{\"colspan\":1,\"rowspan\":1,\"colwidth\":[240],\"backgroundColor\":null,\"cellBorderTop\":null,\"cellBorderBottom\":null,\"cellBorderLeft\":null,\"cellBorderRight\":null,\"cellVerticalAlign\":\"middle\",\"cellTextAlign\":\"center\",\"cellTextDirection\":null,\"cellRowHeight\":null,\"cellPadding\":null}"
+    },
+    {
+      "name": "Cell margins preset applies padding",
+      "pass": true,
+      "detail": "11.52"
+    },
+    {
+      "name": "Text Direction sets vertical writing mode",
+      "pass": true,
+      "detail": "tbrl / vertical-rl"
+    },
+    {
+      "name": "Gridlines toggles table gridlines",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Sort dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Sort dialog sorts rows ascending",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Formula shows guidance toast",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Repeat Header Rows toggles header row",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Table Properties dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Table Properties shows rendered table width",
+      "pass": true,
+      "detail": "{\"width\":624,\"unit\":\"px\"}"
+    },
+    {
+      "name": "Table Properties OK preserves table width",
+      "pass": true,
+      "detail": "624 -> 624"
+    },
+    {
+      "name": "Table Styles launcher opens Modify Style dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Insert Cells dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Insert Cells OK adds a column",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Convert to Text removes table",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Convert to Text keeps cell text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Leaving table hides contextual tabs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Leaving table returns to Home",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

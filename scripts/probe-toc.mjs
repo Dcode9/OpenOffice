@@ -1,0 +1,15 @@
+import puppeteer from "puppeteer-core";
+const CHROME="C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
+const browser=await puppeteer.launch({executablePath:CHROME,headless:true,args:["--no-sandbox"]});
+const page=await browser.newPage(); await page.setViewport({width:1440,height:900});
+const errors=[]; page.on("pageerror",e=>errors.push(e.message)); page.on("console",m=>m.type()==="error"&&errors.push(m.text()));
+const baseline={type:"doc",content:[{type:"heading",attrs:{level:1},content:[{type:"text",text:"Alpha Heading"}]},{type:"paragraph",content:[{type:"text",text:"The quick brown fox."}]}]};
+await page.evaluateOnNewDocument(b=>localStorage.setItem("openoffice:content",JSON.stringify(b)), baseline);
+await page.goto("http://localhost:5173",{waitUntil:"networkidle0",timeout:60000}); await new Promise(r=>setTimeout(r,700));
+console.log("h1",await page.$$eval(".ProseMirror h1",e=>e.map(x=>x.textContent)));
+await page.evaluate(()=>[...document.querySelectorAll(".ribbon-tab")].find(x=>x.textContent.trim()==="Insert")?.click()); await new Promise(r=>setTimeout(r,250));
+const ok=await page.evaluate(()=>{const el=[...document.querySelectorAll(".rb-big")].find(e=>e.textContent.trim()==="Table of Contents"); el?.click(); return !!el});
+await new Promise(r=>setTimeout(r,500));
+console.log("clicked",ok,"toc",await page.evaluate(()=>({n:document.querySelectorAll(".toc-entry").length,title:document.querySelector(".toc-title")?.textContent,html:document.querySelector(".ProseMirror").innerHTML.slice(-400)})));
+console.log("errors",errors);
+await browser.close();

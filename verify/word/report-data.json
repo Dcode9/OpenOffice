@@ -1,0 +1,777 @@
+{
+  "generated": "2026-10-19T17:19:15.1137961+05:30",
+  "environment": {
+    "os": "Microsoft Windows 11 Home Single Language",
+    "osVersion": "10.0.28000",
+    "osBuild": "28000",
+    "screenBounds": "{X=0,Y=0,Width=1920,Height=1200}",
+    "workingArea": "{X=0,Y=0,Width=1920,Height=1140}",
+    "dpi": 120,
+    "scalePercent": 125,
+    "screenshotPhysicalPixels": "1920x1140",
+    "officeUiThemeObserved": "dark/black"
+  },
+  "word": {
+    "version": "16.0",
+    "build": "16.0.20430.20182",
+    "pid": 7276,
+    "hwnd": "0x220954",
+    "caption": "Document1",
+    "mainWindowTitle": "Document1 - Word",
+    "windowState": 1,
+    "maximized": true
+  },
+  "window": {
+    "getWindowRect": "-9,-9,1929,1149",
+    "getWindowRectSize": "1938x1158",
+    "dwmExtendedFrame": "0,0,1920,1140",
+    "dwmExtendedFrameSize": "1920x1140",
+    "clientSize": "1920x1140",
+    "captureRect": "0,0,1920,1140"
+  },
+  "measurements": {
+    "titleBarHeight": 60,
+    "tabStripHeight": 38,
+    "ribbonContentHeight": 124,
+    "ribbonTotalHeightBelowTitleBar": 162,
+    "statusBarHeight": 27,
+    "documentAreaHeight": 891,
+    "windowHeight": 1140,
+    "windowWidth": 1920,
+    "tabStripTop": 60,
+    "ribbonContentTop": 98,
+    "ribbonBottom": 222,
+    "statusBarTop": 1113,
+    "pageTopVisible": null
+  },
+  "tabs": [
+    {
+      "name": "Home",
+      "left": 73,
+      "top": 60,
+      "width": 70,
+      "height": 38,
+      "selected": true
+    },
+    {
+      "name": "Insert",
+      "left": 144,
+      "top": 60,
+      "width": 66,
+      "height": 38,
+      "selected": false
+    },
+    {
+      "name": "Draw",
+      "left": 211,
+      "top": 60,
+      "width": 63,
+      "height": 38,
+      "selected": false
+    },
+    {
+      "name": "Design",
+      "left": 275,
+      "top": 60,
+      "width": 75,
+      "height": 38,
+      "selected": false
+    },
+    {
+      "name": "Layout",
+      "left": 351,
+      "top": 60,
+      "width": 75,
+      "height": 38,
+      "selected": false
+    },
+    {
+      "name": "References",
+      "left": 427,
+      "top": 60,
+      "width": 107,
+      "height": 38,
+      "selected": false
+    },
+    {
+      "name": "Mailings",
+      "left": 535,
+      "top": 60,
+      "width": 87,
+      "height": 38,
+      "selected": false
+    },
+    {
+      "name": "Review",
+      "left": 623,
+      "top": 60,
+      "width": 78,
+      "height": 38,
+      "selected": false
+    },
+    {
+      "name": "View",
+      "left": 702,
+      "top": 60,
+      "width": 60,
+      "height": 38,
+      "selected": false
+    },
+    {
+      "name": "Help",
+      "left": 763,
+      "top": 60,
+      "width": 59,
+      "height": 38,
+      "selected": false
+    }
+  ],
+  "fileTab": {
+    "name": "File",
+    "left": 5,
+    "top": 60,
+    "width": 68,
+    "height": 38
+  },
+  "groupsByTab": {
+    "Home": [
+      {
+        "name": "Home",
+        "className": "NetUIOrderedGroup",
+        "left": 15,
+        "top": 98,
+        "width": 1860,
+        "height": 124
+      },
+      {
+        "name": "Clipboard",
+        "className": "NetUIChunk",
+        "left": 15,
+        "top": 100,
+        "width": 104,
+        "height": 120
+      },
+      {
+        "name": "Font",
+        "className": "NetUIChunk",
+        "left": 119,
+        "top": 100,
+        "width": 386,
+        "height": 120
+      },
+      {
+        "name": "Paragraph",
+        "className": "NetUIChunk",
+        "left": 505,
+        "top": 100,
+        "width": 309,
+        "height": 120
+      },
+      {
+        "name": "Styles",
+        "className": "NetUIChunk",
+        "left": 814,
+        "top": 100,
+        "width": 733,
+        "height": 120
+      },
+      {
+        "name": "Styles",
+        "className": "NetUIElement",
+        "left": 824,
+        "top": 108,
+        "width": 713,
+        "height": 79
+      },
+      {
+        "name": "Editing",
+        "className": "NetUIChunk",
+        "left": 1547,
+        "top": 100,
+        "width": 120,
+        "height": 120
+      },
+      {
+        "name": "Add-ins",
+        "className": "NetUIChunk",
+        "left": 1667,
+        "top": 100,
+        "width": 78,
+        "height": 120
+      },
+      {
+        "name": "AI Perfect Assistant",
+        "className": "NetUIChunk",
+        "left": 1745,
+        "top": 100,
+        "width": 119,
+        "height": 120
+      }
+    ],
+    "Insert": [
+      {
+        "name": "Insert",
+        "className": "NetUIOrderedGroup",
+        "left": 15,
+        "top": 98,
+        "width": 1860,
+        "height": 123
+      },
+      {
+        "name": "Pages",
+        "className": "NetUIChunk",
+        "left": 15,
+        "top": 100,
+        "width": 150,
+        "height": 119
+      },
+      {
+        "name": "Tables",
+        "className": "NetUIChunk",
+        "left": 165,
+        "top": 100,
+        "width": 72,
+        "height": 119
+      },
+      {
+        "name": "Illustrations",
+        "className": "NetUIChunk",
+        "left": 237,
+        "top": 100,
+        "width": 458,
+        "height": 119
+      },
+      {
+        "name": "Media",
+        "className": "NetUIChunk",
+        "left": 695,
+        "top": 100,
+        "width": 72,
+        "height": 119
+      },
+      {
+        "name": "Links",
+        "className": "NetUIChunk",
+        "left": 767,
+        "top": 100,
+        "width": 165,
+        "height": 119
+      },
+      {
+        "name": "Comments",
+        "className": "NetUIChunk",
+        "left": 932,
+        "top": 100,
+        "width": 91,
+        "height": 119
+      },
+      {
+        "name": "Header & Footer",
+        "className": "NetUIChunk",
+        "left": 1023,
+        "top": 100,
+        "width": 205,
+        "height": 119
+      },
+      {
+        "name": "Text",
+        "className": "NetUIChunk",
+        "left": 1228,
+        "top": 100,
+        "width": 370,
+        "height": 119
+      },
+      {
+        "name": "Symbols",
+        "className": "NetUIChunk",
+        "left": 1598,
+        "top": 100,
+        "width": 151,
+        "height": 119
+      },
+      {
+        "name": "eSignature",
+        "className": "NetUIChunk",
+        "left": 1749,
+        "top": 100,
+        "width": 97,
+        "height": 119
+      }
+    ],
+    "Design": [
+      {
+        "name": "Design",
+        "className": "NetUIOrderedGroup",
+        "left": 15,
+        "top": 98,
+        "width": 1860,
+        "height": 123
+      },
+      {
+        "name": "Document Formatting",
+        "className": "NetUIChunk",
+        "left": 15,
+        "top": 100,
+        "width": 1577,
+        "height": 119
+      },
+      {
+        "name": "Style Set",
+        "className": "NetUIElement",
+        "left": 84,
+        "top": 108,
+        "width": 1208,
+        "height": 79
+      },
+      {
+        "name": "Page Background",
+        "className": "NetUIChunk",
+        "left": 1592,
+        "top": 100,
+        "width": 215,
+        "height": 119
+      }
+    ],
+    "Layout": [
+      {
+        "name": "Layout",
+        "className": "NetUIOrderedGroup",
+        "left": 15,
+        "top": 98,
+        "width": 1860,
+        "height": 124
+      },
+      {
+        "name": "Page Setup",
+        "className": "NetUIChunk",
+        "left": 15,
+        "top": 100,
+        "width": 430,
+        "height": 120
+      },
+      {
+        "name": "Paragraph",
+        "className": "NetUIChunk",
+        "left": 445,
+        "top": 100,
+        "width": 361,
+        "height": 120
+      },
+      {
+        "name": "Arrange",
+        "className": "NetUIChunk",
+        "left": 806,
+        "top": 100,
+        "width": 465,
+        "height": 120
+      }
+    ]
+  },
+  "statusBar": {
+    "name": "Status Bar",
+    "left": 0,
+    "top": 1113,
+    "width": 1920,
+    "height": 27,
+    "children": [
+      {
+        "name": "Page Number Page 1 of 1",
+        "type": "ControlType.Button",
+        "left": 5,
+        "top": 1114,
+        "width": 88,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Word Count 113 words",
+        "type": "ControlType.Text",
+        "left": 97,
+        "top": 1114,
+        "width": 82,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Coauthoring Mode ",
+        "type": "ControlType.Button",
+        "left": 183,
+        "top": 1114,
+        "width": 40,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Spelling and Grammar Check No Errors",
+        "type": "ControlType.Button",
+        "left": 227,
+        "top": 1114,
+        "width": 40,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Language English (United States)",
+        "type": "ControlType.Button",
+        "left": 267,
+        "top": 1114,
+        "width": 151,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Macro Recording Not Recording",
+        "type": "ControlType.Button",
+        "left": 422,
+        "top": 1114,
+        "width": 40,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Accessibility Checker Accessibility: Good to go",
+        "type": "ControlType.Button",
+        "left": 462,
+        "top": 1114,
+        "width": 188,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Focus ",
+        "type": "ControlType.Button",
+        "left": 1467,
+        "top": 1114,
+        "width": 76,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Read Mode",
+        "type": "ControlType.Button",
+        "left": 1547,
+        "top": 1114,
+        "width": 50,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Print Layout",
+        "type": "ControlType.Button",
+        "left": 1597,
+        "top": 1114,
+        "width": 50,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Web Layout",
+        "type": "ControlType.Button",
+        "left": 1647,
+        "top": 1114,
+        "width": 50,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Zoom Out (Ctrl -)",
+        "type": "ControlType.Button",
+        "left": 1698,
+        "top": 1114,
+        "width": 22,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Zoom",
+        "type": "ControlType.Slider",
+        "left": 1720,
+        "top": 1114,
+        "width": 125,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Zoom Out",
+        "type": "ControlType.Button",
+        "left": 1720,
+        "top": 1114,
+        "width": 60,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Position",
+        "type": "ControlType.Thumb",
+        "left": 1780,
+        "top": 1120,
+        "width": 6,
+        "height": 14,
+        "offscreen": false
+      },
+      {
+        "name": "Zoom In",
+        "type": "ControlType.Button",
+        "left": 1786,
+        "top": 1114,
+        "width": 59,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Zoom In (Ctrl +)",
+        "type": "ControlType.Button",
+        "left": 1845,
+        "top": 1114,
+        "width": 22,
+        "height": 26,
+        "offscreen": false
+      },
+      {
+        "name": "Zoom 100%",
+        "type": "ControlType.Button",
+        "left": 1867,
+        "top": 1114,
+        "width": 53,
+        "height": 26,
+        "offscreen": false
+      }
+    ]
+  },
+  "document": {
+    "wordCount": 113,
+    "pageCount": 1,
+    "paragraphCount": 27,
+    "tableCount": 1,
+    "tableRows": 3,
+    "tableColumns": 3,
+    "titleText": "Quarterly Business Review",
+    "rulerVisible": true,
+    "verticalRulerVisible": true,
+    "pageColor": "#FFFFFF",
+    "startOfText": "Quarterly Business Review\rPrepared by the Strategy Office | October 2026\rExecutive Summary\rThis document verifies the vi"
+  },
+  "fonts": {
+    "normalStyle": {
+      "name": "Calibri",
+      "size": 12.0
+    },
+    "titleStyle": {
+      "name": "Calibri Light",
+      "size": 28.0
+    },
+    "heading1Style": {
+      "name": "Calibri Light",
+      "size": 20.0
+    },
+    "heading2Style": {
+      "name": "Calibri Light",
+      "size": 16.0
+    },
+    "paragraphs": [
+      {
+        "index": 1,
+        "style": "Title",
+        "font": "Calibri Light",
+        "size": 28.0,
+        "text": "Quarterly Business Review<CR>"
+      },
+      {
+        "index": 2,
+        "style": "Normal",
+        "font": "Calibri",
+        "size": 10.0,
+        "text": "Prepared by the Strategy Office | October 2026<CR>"
+      },
+      {
+        "index": 3,
+        "style": "Heading 1",
+        "font": "Calibri Light",
+        "size": 20.0,
+        "text": "Executive Summary<CR>"
+      },
+      {
+        "index": 4,
+        "style": "Normal",
+        "font": "Calibri",
+        "size": 12.0,
+        "text": "This document verifies the visual appearance of Microso"
+      },
+      {
+        "index": 5,
+        "style": "Heading 2",
+        "font": "Calibri Light",
+        "size": 16.0,
+        "text": "Financial Highlights<CR>"
+      },
+      {
+        "index": 6,
+        "style": "List Paragraph",
+        "font": "Calibri",
+        "size": 12.0,
+        "text": "Revenue grew 12% year over year.<CR>"
+      },
+      {
+        "index": 7,
+        "style": "List Paragraph",
+        "font": "Calibri",
+        "size": 12.0,
+        "text": "Operating margin expanded to 28%.<CR>"
+      },
+      {
+        "index": 8,
+        "style": "List Paragraph",
+        "font": "Calibri",
+        "size": 12.0,
+        "text": "Free cash flow reached $4.2 billion.<CR>"
+      },
+      {
+        "index": 9,
+        "style": "Heading 2",
+        "font": "Calibri Light",
+        "size": 16.0,
+        "text": "Priorities for Next Quarter<CR>"
+      },
+      {
+        "index": 10,
+        "style": "List Paragraph",
+        "font": "Calibri",
+        "size": 12.0,
+        "text": "Expand the enterprise pipeline.<CR>"
+      },
+      {
+        "index": 11,
+        "style": "List Paragraph",
+        "font": "Calibri",
+        "size": 12.0,
+        "text": "Improve onboarding completion.<CR>"
+      },
+      {
+        "index": 12,
+        "style": "List Paragraph",
+        "font": "Calibri",
+        "size": 12.0,
+        "text": "Launch the partner dashboard.<CR>"
+      }
+    ],
+    "ribbon": {
+      "familyObserved": "Segoe UI",
+      "familySource": "visual/system UI font match; UIA TextPattern not exposed by ribbon",
+      "systemMessageBoxFont": "Segoe UI 9pt",
+      "exactPointSize": "unknown",
+      "note": "Uppercase tab labels measured approx. 12 px tall at 125% scaling"
+    },
+    "uiaDocumentRuns": [
+      "Calibri Light 28pt",
+      "Calibri 10pt",
+      "Calibri Light 20pt",
+      "Calibri 12pt",
+      "Calibri Light 16pt",
+      "Calibri 12pt",
+      "Calibri 12pt",
+      "Calibri 12pt"
+    ]
+  },
+  "screenshots": {
+    "home": {
+      "file": "C:\\Users\\Dhairya Shah\\.t3\\projects\\openoffice\\verify\\word\\word-home.png",
+      "titleBar": "#070C13",
+      "titleBarDominant": "#070C13",
+      "tabStrip": "#080A0F",
+      "tabStripDominant": "#070C12",
+      "ribbonContent": "#292929",
+      "ribbonContentDominant": "#292929",
+      "pageCanvas": "#070C13",
+      "pageCanvasDominant": "#080D13",
+      "pageBackground": "#FFFFFF",
+      "statusBar": "#141414",
+      "statusBarDominant": "#141414",
+      "rulerHorizontal": "#FFFFFF",
+      "rulerVertical": "#292929",
+      "activeTab": "Home",
+      "activeUnderline": {
+        "hex": "#82ABF1",
+        "rgb": "130,171,241",
+        "left": 84,
+        "top": 92,
+        "width": 49,
+        "height": 3
+      }
+    },
+    "insert": {
+      "file": "C:\\Users\\Dhairya Shah\\.t3\\projects\\openoffice\\verify\\word\\word-insert.png",
+      "titleBar": "#070C13",
+      "titleBarDominant": "#070C13",
+      "tabStrip": "#080A0F",
+      "tabStripDominant": "#070C12",
+      "ribbonContent": "#292929",
+      "ribbonContentDominant": "#292929",
+      "pageCanvas": "#070C13",
+      "pageCanvasDominant": "#080D13",
+      "pageBackground": "#FFFFFF",
+      "statusBar": "#141414",
+      "statusBarDominant": "#141414",
+      "rulerHorizontal": "#EFEFEF",
+      "rulerVertical": "#292929",
+      "activeTab": "Insert",
+      "activeUnderline": {
+        "hex": "#82ABF1",
+        "rgb": "130,171,241",
+        "left": 155,
+        "top": 92,
+        "width": 45,
+        "height": 3
+      }
+    },
+    "design": {
+      "file": "C:\\Users\\Dhairya Shah\\.t3\\projects\\openoffice\\verify\\word\\word-design.png",
+      "titleBar": "#070C13",
+      "titleBarDominant": "#070C13",
+      "tabStrip": "#080A0F",
+      "tabStripDominant": "#070C12",
+      "ribbonContent": "#292929",
+      "ribbonContentDominant": "#292929",
+      "pageCanvas": "#070C13",
+      "pageCanvasDominant": "#080D13",
+      "pageBackground": "#FFFFFF",
+      "statusBar": "#141414",
+      "statusBarDominant": "#141414",
+      "rulerHorizontal": "#EFEFEF",
+      "rulerVertical": "#292929",
+      "activeTab": "Design",
+      "activeUnderline": {
+        "hex": "#82ABF1",
+        "rgb": "130,171,241",
+        "left": 286,
+        "top": 92,
+        "width": 54,
+        "height": 3
+      }
+    },
+    "layout": {
+      "file": "C:\\Users\\Dhairya Shah\\.t3\\projects\\openoffice\\verify\\word\\word-layout.png",
+      "titleBar": "#070C13",
+      "titleBarDominant": "#070C13",
+      "tabStrip": "#080A0F",
+      "tabStripDominant": "#070C12",
+      "ribbonContent": "#292929",
+      "ribbonContentDominant": "#292929",
+      "pageCanvas": "#070C13",
+      "pageCanvasDominant": "#080D13",
+      "pageBackground": "#FFFFFF",
+      "statusBar": "#141414",
+      "statusBarDominant": "#141414",
+      "rulerHorizontal": "#FFFFFF",
+      "rulerVertical": "#292929",
+      "activeTab": "Layout",
+      "activeUnderline": {
+        "hex": "#82ABF1",
+        "rgb": "130,171,241",
+        "left": 362,
+        "top": 92,
+        "width": 54,
+        "height": 3
+      }
+    }
+  }
+}

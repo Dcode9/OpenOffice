@@ -1,0 +1,116 @@
+{
+  "nav": [
+    "Home",
+    "New",
+    "Open",
+    "Get Add-ins",
+    "Info",
+    "Save",
+    "Save As",
+    "Print",
+    "Share",
+    "Export",
+    "Close",
+    "Account",
+    "Options"
+  ],
+  "results": [
+    {
+      "label": "Home",
+      "backstage": true,
+      "heading": "Good afternoon",
+      "navActive": "Home",
+      "changed": " Back Home New Open Get Add-ins Info Save Save As Print Shar",
+      "changedText": false
+    },
+    {
+      "label": "New",
+      "backstage": true,
+      "heading": "New",
+      "navActive": "New",
+      "changed": " Back Home New Open Get Add-ins Info Save Save As Print Shar",
+      "changedText": false
+    },
+    {
+      "label": "Open",
+      "backstage": true,
+      "heading": "Open",
+      "navActive": "Open",
+      "changed": " Back Home New Open Get Add-ins Info Save Save As Print Shar",
+      "changedText": false
+    },
+    {
+      "label": "Get Add-ins",
+      "backstage": true,
+      "heading": "Get Add-ins",
+      "navActive": "Get Add-ins",
+      "changed": " Back Home New Open Get Add-ins Info Save Save As Print Shar",
+      "changedText": false
+    },
+    {
+      "label": "Info",
+      "backstage": true,
+      "heading": "Document1",
+      "navActive": "Info",
+      "changed": " Back Home New Open Get Add-ins Info Save Save As Print Shar",
+      "changedText": false
+    },
+    {
+      "label": "Save",
+      "backstage": true,
+      "heading": "Document1",
+      "navActive": "Info",
+      "changed": " Back Home New Open Get Add-ins Info Save Save As Print Shar",
+      "changedText": false
+    },
+    {
+      "label": "Save As",
+      "backstage": true,
+      "heading": "Save As",
+      "navActive": "Save As",
+      "changed": " Back Home New Open Get Add-ins Info Save Save As Print Shar",
+      "changedText": false
+    },
+    {
+      "label": "Print",
+      "backstage": true,
+      "heading": "",
+      "navActive": "Print",
+      "changed": " Back Home New Open Get Add-ins Info Save Save As Print Shar",
+      "changedText": false
+    },
+    {
+      "label": "Share",
+      "backstage": true,
+      "heading": "Share",
+      "navActive": "Share",
+      "changed": " Back Home New Open Get Add-ins Info Save Save As Print Shar",
+      "changedText": false
+    },
+    {
+      "label": "Export",
+      "backstage": true,
+      "heading": "Export",
+      "navActive": "Export",
+      "changed": " Back Home New Open Get Add-ins Info Save Save As Print Shar",
+      "changedText": false
+    },
+    {
+      "label": "Account",
+      "backstage": true,
+      "heading": "Account",
+      "navActive": "Account",
+      "changed": " Back Home New Open Get Add-ins Info Save Save As Print Shar",
+      "changedText": false
+    },
+    {
+      "label": "Options",
+      "backstage": true,
+      "heading": "Word Options",
+      "navActive": "Options",
+      "changed": " Back Home New Open Get Add-ins Info Save Save As Print Shar",
+      "changedText": false
+    }
+  ],
+  "errors": []
+}

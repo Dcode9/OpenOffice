@@ -1,0 +1,1461 @@
+{
+  "Home": [
+    {
+      "id": "GroupClipboard",
+      "label": "GroupClipboard",
+      "controls": [
+        {
+          "id": "PasteMenu",
+          "label": "Paste",
+          "type": "splitButton"
+        },
+        {
+          "id": "Cut",
+          "label": "Cut",
+          "type": "button"
+        },
+        {
+          "id": "Copy",
+          "label": "Copy",
+          "type": "button"
+        },
+        {
+          "id": "FormatPainter",
+          "label": "Format Painter",
+          "type": "control"
+        },
+        {
+          "id": "ShowClipboard",
+          "label": "Office Clipboard...",
+          "type": "button (dialogBoxLauncher)"
+        }
+      ]
+    },
+    {
+      "id": "GroupFont",
+      "label": "GroupFont",
+      "controls": [
+        {
+          "id": "Font",
+          "label": "Font:",
+          "type": "comboBox"
+        },
+        {
+          "id": "FontSize",
+          "label": "Font Size:",
+          "type": "comboBox"
+        },
+        {
+          "id": "FontSizeIncreaseWord",
+          "label": "Grow Font",
+          "type": "button"
+        },
+        {
+          "id": "FontSizeDecreaseWord",
+          "label": "Shrink Font",
+          "type": "button"
+        },
+        {
+          "id": "ChangeCaseGallery",
+          "label": "Change Case",
+          "type": "gallery"
+        },
+        {
+          "id": "ClearFormatting",
+          "label": "Clear Formatting",
+          "type": "button"
+        },
+        {
+          "id": "Bold",
+          "label": "Bold",
+          "type": "toggleButton"
+        },
+        {
+          "id": "Italic",
+          "label": "Italic",
+          "type": "toggleButton"
+        },
+        {
+          "id": "UnderlineGallery",
+          "label": "Underline",
+          "type": "gallery"
+        },
+        {
+          "id": "Strikethrough",
+          "label": "Strikethrough",
+          "type": "toggleButton"
+        },
+        {
+          "id": "Subscript",
+          "label": "Subscript",
+          "type": "toggleButton"
+        },
+        {
+          "id": "Superscript",
+          "label": "Superscript",
+          "type": "toggleButton"
+        },
+        {
+          "id": "TextEffectsGallery",
+          "label": "Text Effects and Typography",
+          "type": "gallery"
+        },
+        {
+          "id": "TextHighlightColorPicker",
+          "label": "Text Highlight Color",
+          "type": "gallery"
+        },
+        {
+          "id": "FontColorPicker",
+          "label": "Font Color",
+          "type": "gallery"
+        },
+        {
+          "id": "FontDialog",
+          "label": "Font...",
+          "type": "button (dialogBoxLauncher)"
+        }
+      ]
+    },
+    {
+      "id": "GroupParagraph",
+      "label": "GroupParagraph",
+      "controls": [
+        {
+          "id": "BulletsGalleryWord",
+          "label": "Bullets",
+          "type": "gallery"
+        },
+        {
+          "id": "NumberingGalleryWord",
+          "label": "Numbering",
+          "type": "gallery"
+        },
+        {
+          "id": "MultilevelListGallery",
+          "label": "Multilevel List",
+          "type": "gallery"
+        },
+        {
+          "id": "IndentDecreaseWord",
+          "label": "Decrease Indent",
+          "type": "button"
+        },
+        {
+          "id": "IndentIncreaseWord",
+          "label": "Increase Indent",
+          "type": "button"
+        },
+        {
+          "id": "SortDialogClassic",
+          "label": "Sort...",
+          "type": "button"
+        },
+        {
+          "id": "ParagraphMarks",
+          "label": "Show All",
+          "type": "toggleButton"
+        },
+        {
+          "id": "AlignLeft",
+          "label": "Align Left",
+          "type": "toggleButton"
+        },
+        {
+          "id": "AlignCenter",
+          "label": "Center",
+          "type": "toggleButton"
+        },
+        {
+          "id": "AlignRight",
+          "label": "Align Right",
+          "type": "toggleButton"
+        },
+        {
+          "id": "AlignJustify",
+          "label": "Justify",
+          "type": "toggleButton"
+        },
+        {
+          "id": "LineSpacingGallery",
+          "label": "Line and Paragraph Spacing",
+          "type": "gallery"
+        },
+        {
+          "id": "ShadingColorPicker",
+          "label": "Shading",
+          "type": "gallery"
+        },
+        {
+          "id": "BordersSelectionGallery",
+          "label": "Borders",
+          "type": "gallery"
+        },
+        {
+          "id": "ParagraphDialog",
+          "label": "Paragraph...",
+          "type": "button (dialogBoxLauncher)"
+        }
+      ]
+    },
+    {
+      "id": "GroupStyles",
+      "label": "GroupStyles",
+      "controls": [
+        {
+          "id": "QuickStylesGallery",
+          "label": "Styles",
+          "type": "gallery"
+        },
+        {
+          "id": "StylesPane",
+          "label": "Styles...",
+          "type": "button (dialogBoxLauncher)"
+        }
+      ]
+    },
+    {
+      "id": "GroupEditing",
+      "label": "GroupEditing",
+      "controls": [
+        {
+          "id": "SelectMenuExcel",
+          "label": "Find & Select",
+          "type": "splitButton"
+        },
+        {
+          "id": "ReplaceDialog",
+          "label": "Replace...",
+          "type": "button"
+        },
+        {
+          "id": "SelectMenu",
+          "label": "Select",
+          "type": "menu"
+        }
+      ]
+    },
+    {
+      "id": "GroupOfficeExtensionsAddinFlyout",
+      "label": "GroupOfficeExtensionsAddinFlyout",
+      "controls": [
+        {
+          "id": "OfficeExtensionsShowAddinFlyout",
+          "label": "Add‑ins",
+          "type": "button"
+        },
+        {
+          "id": "OfficeExtensionsShowAddinFlyout",
+          "label": "Add‑ins",
+          "type": "toggleButton"
+        }
+      ]
+    }
+  ],
+  "Insert": [
+    {
+      "id": "GroupInsertPages",
+      "label": "GroupInsertPages",
+      "controls": [
+        {
+          "id": "CoverPageInsertGallery",
+          "label": "Cover Page",
+          "type": "gallery"
+        },
+        {
+          "id": "BlankPageInsert",
+          "label": "Blank Page",
+          "type": "button"
+        },
+        {
+          "id": "PageBreakInsertWord",
+          "label": "Page Break",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupInsertTables",
+      "label": "GroupInsertTables",
+      "controls": [
+        {
+          "id": "TableInsertGallery",
+          "label": "Table",
+          "type": "gallery"
+        }
+      ]
+    },
+    {
+      "id": "GroupInsertIllustrations",
+      "label": "GroupInsertIllustrations",
+      "controls": [
+        {
+          "id": "FlyoutAnchorInsertPictures",
+          "label": "Pictures",
+          "type": "gallery"
+        },
+        {
+          "id": "MovieFromClipOrganizerInsert",
+          "label": "Online Videos...",
+          "type": "button"
+        },
+        {
+          "id": "GalleryAllShapesAndCanvas",
+          "label": "Shapes",
+          "type": "gallery"
+        },
+        {
+          "id": "IconInsertFromFile",
+          "label": "Icons",
+          "type": "button"
+        },
+        {
+          "id": "Insert3DModelDropdown",
+          "label": "3D Models",
+          "type": "splitButton"
+        },
+        {
+          "id": "SmartArtInsert",
+          "label": "SmartArt...",
+          "type": "button"
+        },
+        {
+          "id": "ChartInsert",
+          "label": "Chart...",
+          "type": "button"
+        },
+        {
+          "id": "ScreenshotInsertGallery",
+          "label": "Screenshot",
+          "type": "gallery"
+        }
+      ]
+    },
+    {
+      "id": "GroupOfficeExtension",
+      "label": "GroupOfficeExtension",
+      "controls": [
+        {
+          "id": "OfficeExtensionsAppStore",
+          "label": "Get Add‑ins",
+          "type": "button"
+        },
+        {
+          "id": "OfficeExtensionsGallery2",
+          "label": "My Add-ins",
+          "type": "gallery"
+        }
+      ]
+    },
+    {
+      "id": "GroupMedia",
+      "label": "GroupMedia",
+      "controls": [
+        {
+          "id": "MovieFromClipOrganizerInsert",
+          "label": "Online Videos...",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupInsertLinks",
+      "label": "GroupInsertLinks",
+      "controls": [
+        {
+          "id": "HyperlinkInsert",
+          "label": "Link",
+          "type": "button"
+        },
+        {
+          "id": "BookmarkInsert",
+          "label": "Bookmark...",
+          "type": "button"
+        },
+        {
+          "id": "CrossReferenceInsert",
+          "label": "Cross-reference...",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupInsertComments",
+      "label": "GroupInsertComments",
+      "controls": [
+        {
+          "id": "InsertNewComment",
+          "label": "Comment",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupHeaderFooter",
+      "label": "GroupHeaderFooter",
+      "controls": [
+        {
+          "id": "HeaderInsertGallery",
+          "label": "Header",
+          "type": "gallery"
+        },
+        {
+          "id": "FooterInsertGallery",
+          "label": "Footer",
+          "type": "gallery"
+        },
+        {
+          "id": "HeaderFooterPageNumberInsert",
+          "label": "Page Number",
+          "type": "menu"
+        }
+      ]
+    },
+    {
+      "id": "GroupInsertText",
+      "label": "GroupInsertText",
+      "controls": [
+        {
+          "id": "TextBoxInsertGallery",
+          "label": "Text Box",
+          "type": "gallery"
+        },
+        {
+          "id": "QuickPartsInsertGallery",
+          "label": "Quick Parts",
+          "type": "gallery"
+        },
+        {
+          "id": "WordArtInsertGallery",
+          "label": "WordArt",
+          "type": "gallery"
+        },
+        {
+          "id": "DropCapInsertGallery",
+          "label": "Drop Cap",
+          "type": "gallery"
+        },
+        {
+          "id": "SignatureLineInsertMenu",
+          "label": "Signature Line",
+          "type": "splitButton"
+        },
+        {
+          "id": "DateAndTimeInsert",
+          "label": "Date & Time...",
+          "type": "button"
+        },
+        {
+          "id": "OleObjectInsertMenu",
+          "label": "Object",
+          "type": "splitButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupInsertSymbols",
+      "label": "GroupInsertSymbols",
+      "controls": [
+        {
+          "id": "InsertBuildingBlocksEquationsGallery",
+          "label": "Equation",
+          "type": "gallery"
+        },
+        {
+          "id": "SymbolInsertGallery",
+          "label": "Symbol",
+          "type": "gallery"
+        }
+      ]
+    }
+  ],
+  "Draw": [
+    {
+      "id": "GroupInputMode",
+      "label": "GroupInputMode",
+      "controls": [
+        {
+          "id": "FingerPaintingMode",
+          "label": "Draw with Touch",
+          "type": "toggleButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupWrite",
+      "label": "GroupWrite",
+      "controls": [
+        {
+          "id": "FingerPaintingMode",
+          "label": "Draw with Touch",
+          "type": "toggleButton"
+        },
+        {
+          "id": "InkEraser",
+          "label": "Stroke Eraser",
+          "type": "toggleButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupDrawingTools",
+      "label": "GroupDrawingTools",
+      "controls": [
+        {
+          "id": "InkToolboxWithEraserAndLasso",
+          "label": "Drawing Tools",
+          "type": "control"
+        }
+      ]
+    },
+    {
+      "id": "GroupDrawWithTouch",
+      "label": "GroupDrawWithTouch",
+      "controls": [
+        {
+          "id": "FingerPaintingMode",
+          "label": "Draw with Touch",
+          "type": "toggleButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupStencils",
+      "label": "GroupStencils",
+      "controls": [
+        {
+          "id": "ShowRulerStencil",
+          "label": "Ruler",
+          "type": "toggleButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupEditingExcel",
+      "label": "GroupEditingExcel",
+      "controls": [
+        {
+          "id": "FormatBackgroundDropdown",
+          "label": "Format Background",
+          "type": "menu"
+        }
+      ]
+    },
+    {
+      "id": "GroupInkConvertOneNote",
+      "label": "GroupInkConvertOneNote",
+      "controls": [
+        {
+          "id": "DiagrammingOnline",
+          "label": "Ink to Shape",
+          "type": "toggleButton"
+        },
+        {
+          "id": "SelectionToMathConvert",
+          "label": "Ink to Math",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupInsertDrawingCanvas",
+      "label": "GroupInsertDrawingCanvas",
+      "controls": [
+        {
+          "id": "InsertInkDrawingCanvas",
+          "label": "Drawing Canvas",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "InkReplay",
+      "label": "InkReplay",
+      "controls": [
+        {
+          "id": "Replay",
+          "label": "Ink Replay",
+          "type": "toggleButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupPenAndInkHelp",
+      "label": "GroupPenAndInkHelp",
+      "controls": [
+        {
+          "id": "PenAndInkHelp",
+          "label": "Ink Help",
+          "type": "button"
+        }
+      ]
+    }
+  ],
+  "Design": [
+    {
+      "id": "GroupStyleSet",
+      "label": "GroupStyleSet",
+      "controls": [
+        {
+          "id": "ThemesGallery",
+          "label": "Themes",
+          "type": "gallery"
+        },
+        {
+          "id": "QuickStylesSets",
+          "label": "Style Set",
+          "type": "gallery"
+        },
+        {
+          "id": "ThemeColorsGallery",
+          "label": "Colors",
+          "type": "gallery"
+        },
+        {
+          "id": "ThemeFontsGallery",
+          "label": "Fonts",
+          "type": "gallery"
+        },
+        {
+          "id": "ParagraphSpacing",
+          "label": "Paragraph Spacing",
+          "type": "gallery"
+        },
+        {
+          "id": "ThemeEffectsGallery",
+          "label": "Effects",
+          "type": "gallery"
+        },
+        {
+          "id": "QuickStylesSetAsDefault",
+          "label": "Set as Default",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupPageBackground",
+      "label": "GroupPageBackground",
+      "controls": [
+        {
+          "id": "WatermarkGallery",
+          "label": "Watermark",
+          "type": "gallery"
+        },
+        {
+          "id": "PageColorPicker",
+          "label": "Page Color",
+          "type": "gallery"
+        },
+        {
+          "id": "PageBorderAndShadingDialog",
+          "label": "Page Borders...",
+          "type": "button"
+        }
+      ]
+    }
+  ],
+  "Layout": [
+    {
+      "id": "GroupPageLayoutSetup",
+      "label": "GroupPageLayoutSetup",
+      "controls": [
+        {
+          "id": "PageMarginsGallery",
+          "label": "Margins",
+          "type": "gallery"
+        },
+        {
+          "id": "PageOrientationGallery",
+          "label": "Orientation",
+          "type": "gallery"
+        },
+        {
+          "id": "PageSizeGallery",
+          "label": "Size",
+          "type": "gallery"
+        },
+        {
+          "id": "TableColumnsGallery",
+          "label": "Columns",
+          "type": "gallery"
+        },
+        {
+          "id": "BreaksGallery",
+          "label": "Breaks",
+          "type": "gallery"
+        },
+        {
+          "id": "LineNumbersMenu",
+          "label": "Line Numbers",
+          "type": "menu"
+        },
+        {
+          "id": "HyphenationMenu",
+          "label": "Hyphenation",
+          "type": "menu"
+        },
+        {
+          "id": "PageSetupDialog",
+          "label": "Page Setup...",
+          "type": "button (dialogBoxLauncher)"
+        }
+      ]
+    },
+    {
+      "id": "GroupParagraphLayout",
+      "label": "GroupParagraphLayout",
+      "controls": [
+        {
+          "id": "IndentLabel",
+          "label": "Indent",
+          "type": "labelControl"
+        },
+        {
+          "id": "ParagraphIndentLeft",
+          "label": "Left:",
+          "type": "control"
+        },
+        {
+          "id": "ParagraphIndentRight",
+          "label": "Right:",
+          "type": "control"
+        },
+        {
+          "id": "SpacingLabel",
+          "label": "Spacing",
+          "type": "labelControl"
+        },
+        {
+          "id": "ParagraphSpacingBefore",
+          "label": "Before:",
+          "type": "control"
+        },
+        {
+          "id": "ParagraphSpacingAfter",
+          "label": "After:",
+          "type": "control"
+        },
+        {
+          "id": "ParagraphDialog",
+          "label": "Paragraph...",
+          "type": "button (dialogBoxLauncher)"
+        }
+      ]
+    },
+    {
+      "id": "GroupArrange",
+      "label": "GroupArrange",
+      "controls": [
+        {
+          "id": "PicturePositionGallery",
+          "label": "Position",
+          "type": "gallery"
+        },
+        {
+          "id": "TextWrapGallery",
+          "label": "Wrap Text",
+          "type": "gallery"
+        },
+        {
+          "id": "ObjectBringForwardMenu",
+          "label": "Bring Forward",
+          "type": "splitButton"
+        },
+        {
+          "id": "ObjectSendBackwardMenu",
+          "label": "Send Backward",
+          "type": "splitButton"
+        },
+        {
+          "id": "SelectionPane",
+          "label": "Selection Pane...",
+          "type": "toggleButton"
+        },
+        {
+          "id": "ObjectAlignMenu",
+          "label": "Align",
+          "type": "menu"
+        },
+        {
+          "id": "ObjectsGroupMenu",
+          "label": "Group",
+          "type": "menu"
+        },
+        {
+          "id": "ObjectRotateGallery",
+          "label": "Rotate",
+          "type": "gallery"
+        }
+      ]
+    }
+  ],
+  "References": [
+    {
+      "id": "GroupTableOfContents",
+      "label": "GroupTableOfContents",
+      "controls": [
+        {
+          "id": "TableOfContentsGallery",
+          "label": "Table of Contents",
+          "type": "gallery"
+        },
+        {
+          "id": "TableOfContentsAddTextGallery",
+          "label": "Add Text",
+          "type": "gallery"
+        },
+        {
+          "id": "TableOfContentsUpdate",
+          "label": "Update Table...",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupFootnotes",
+      "label": "GroupFootnotes",
+      "controls": [
+        {
+          "id": "FootnoteInsert",
+          "label": "Insert Footnote",
+          "type": "button"
+        },
+        {
+          "id": "EndnoteInsertWord",
+          "label": "Insert Endnote",
+          "type": "button"
+        },
+        {
+          "id": "FootnoteNext",
+          "label": "Next Footnote",
+          "type": "splitButton"
+        },
+        {
+          "id": "FootnotesEndnotesShow",
+          "label": "Show Notes",
+          "type": "button"
+        },
+        {
+          "id": "FootnoteEndnoteDialog",
+          "label": "Footnote and Endnote Dialog...",
+          "type": "button (dialogBoxLauncher)"
+        }
+      ]
+    },
+    {
+      "id": "GroupCitationsAndBibliography",
+      "label": "GroupCitationsAndBibliography",
+      "controls": [
+        {
+          "id": "CitationInsert",
+          "label": "Insert Citation",
+          "type": "gallery"
+        },
+        {
+          "id": "BibliographyManageSources",
+          "label": "Manage Sources...",
+          "type": "button"
+        },
+        {
+          "id": "BibliographyStyle",
+          "label": "Style:",
+          "type": "comboBox"
+        },
+        {
+          "id": "BibliographyGallery",
+          "label": "Bibliography",
+          "type": "gallery"
+        }
+      ]
+    },
+    {
+      "id": "GroupCaptions",
+      "label": "GroupCaptions",
+      "controls": [
+        {
+          "id": "CaptionInsert",
+          "label": "Insert Caption...",
+          "type": "button"
+        },
+        {
+          "id": "TableOfFiguresInsert",
+          "label": "Insert Table of Figures...",
+          "type": "button"
+        },
+        {
+          "id": "TableOfFiguresUpdate",
+          "label": "Update Table",
+          "type": "button"
+        },
+        {
+          "id": "CrossReferenceInsert",
+          "label": "Cross-reference...",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupIndex",
+      "label": "GroupIndex",
+      "controls": [
+        {
+          "id": "IndexMarkEntry",
+          "label": "Mark Entry...",
+          "type": "button"
+        },
+        {
+          "id": "IndexInsert",
+          "label": "Insert Index...",
+          "type": "button"
+        },
+        {
+          "id": "IndexUpdate",
+          "label": "Update Index",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupTableOfAuthorities",
+      "label": "GroupTableOfAuthorities",
+      "controls": [
+        {
+          "id": "CitationMark",
+          "label": "Mark Citation...",
+          "type": "button"
+        },
+        {
+          "id": "TableOfAuthoritiesInsert",
+          "label": "Insert Table of Authorities...",
+          "type": "button"
+        },
+        {
+          "id": "TableOfAuthoritiesUpdate",
+          "label": "Update Table",
+          "type": "button"
+        }
+      ]
+    }
+  ],
+  "Mailings": [
+    {
+      "id": "GroupEnvelopeLabelCreate",
+      "label": "GroupEnvelopeLabelCreate",
+      "controls": [
+        {
+          "id": "EnvelopesAndLabelsDialog",
+          "label": "Envelopes...",
+          "type": "button"
+        },
+        {
+          "id": "LabelsDialog",
+          "label": "Labels...",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupMailMergeStart",
+      "label": "GroupMailMergeStart",
+      "controls": [
+        {
+          "id": "MailMergeStartMailMergeMenu",
+          "label": "Start Mail Merge",
+          "type": "menu"
+        },
+        {
+          "id": "MailMergeSelectRecipients",
+          "label": "Select Recipients",
+          "type": "menu"
+        },
+        {
+          "id": "MailMergeRecipientsEditList",
+          "label": "Edit Recipient List...",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupMailMergeWriteInsertFields",
+      "label": "GroupMailMergeWriteInsertFields",
+      "controls": [
+        {
+          "id": "MailMergeHighlightMergeFields",
+          "label": "Highlight Merge Fields",
+          "type": "toggleButton"
+        },
+        {
+          "id": "MailMergeAddressBlockInsert",
+          "label": "Address Block...",
+          "type": "button"
+        },
+        {
+          "id": "MailMergeGreetingLineInsert",
+          "label": "Greeting Line...",
+          "type": "button"
+        },
+        {
+          "id": "MailMergeMergeFieldInsertMenu",
+          "label": "Insert Merge Field",
+          "type": "splitButton"
+        },
+        {
+          "id": "MailMergeRules",
+          "label": "Rules",
+          "type": "menu"
+        },
+        {
+          "id": "MailMergeMatchFields",
+          "label": "Match Fields...",
+          "type": "button"
+        },
+        {
+          "id": "MailMergeUpdateLabels",
+          "label": "Update Labels",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupMailMergePreviewResults",
+      "label": "GroupMailMergePreviewResults",
+      "controls": [
+        {
+          "id": "MailMergeResultsPreview",
+          "label": "Preview Results",
+          "type": "toggleButton"
+        },
+        {
+          "id": "MailMergeGoToFirstRecord",
+          "label": "First",
+          "type": "button"
+        },
+        {
+          "id": "MailMergeGoToPreviousRecord",
+          "label": "Previous",
+          "type": "button"
+        },
+        {
+          "id": "MailMergeGoToRecord",
+          "label": "Record:",
+          "type": "control"
+        },
+        {
+          "id": "MailMergeGoToNextRecord",
+          "label": "Next",
+          "type": "button"
+        },
+        {
+          "id": "MailMergeGotToLastRecord",
+          "label": "Last",
+          "type": "button"
+        },
+        {
+          "id": "MailMergeFindRecipient",
+          "label": "Find Recipient...",
+          "type": "button"
+        },
+        {
+          "id": "MailMergeAutoCheckForErrors",
+          "label": "Check for Errors...",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupMailMergeFinish",
+      "label": "GroupMailMergeFinish",
+      "controls": [
+        {
+          "id": "MailMergeFinishAndMergeMenu",
+          "label": "Finish & Merge",
+          "type": "menu"
+        }
+      ]
+    }
+  ],
+  "Review": [
+    {
+      "id": "GroupProofing",
+      "label": "GroupProofing",
+      "controls": [
+        {
+          "id": "SpellingAndGrammar",
+          "label": "Spelling & Grammar",
+          "type": "button"
+        },
+        {
+          "id": "Thesaurus",
+          "label": "Thesaurus...",
+          "type": "button"
+        },
+        {
+          "id": "WordCount",
+          "label": "Word Count",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupSpeech",
+      "label": "GroupSpeech",
+      "controls": [
+        {
+          "id": "ReadAloud",
+          "label": "Read Aloud",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupAccessibility",
+      "label": "GroupAccessibility",
+      "controls": [
+        {
+          "id": "MenuAccessibility",
+          "label": "Accessibility",
+          "type": "splitButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupLanguage",
+      "label": "GroupLanguage",
+      "controls": [
+        {
+          "id": "TranslateMenu",
+          "label": "Translate",
+          "type": "menu"
+        },
+        {
+          "id": "LanguageCommands",
+          "label": "Language",
+          "type": "menu"
+        }
+      ]
+    },
+    {
+      "id": "GroupComments",
+      "label": "GroupComments",
+      "controls": [
+        {
+          "id": "ReviewNewComment",
+          "label": "New Comment",
+          "type": "button"
+        },
+        {
+          "id": "ReviewDeleteCommentsMenu",
+          "label": "Delete",
+          "type": "splitButton"
+        },
+        {
+          "id": "ReviewPreviousCommentWord",
+          "label": "Previous",
+          "type": "button"
+        },
+        {
+          "id": "ReviewNextCommentWord",
+          "label": "Next",
+          "type": "button"
+        },
+        {
+          "id": "ShowCommentGutter",
+          "label": "Show Comments",
+          "type": "toggleButton"
+        },
+        {
+          "id": "ShowCommentsMenu",
+          "label": "Show Comments",
+          "type": "splitButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupChangesTracking",
+      "label": "GroupChangesTracking",
+      "controls": [
+        {
+          "id": "ReviewTrackChangesMenu",
+          "label": "Track Changes",
+          "type": "splitButton"
+        },
+        {
+          "id": "ReviewDisplayForReview",
+          "label": "Display for Review",
+          "type": "dropDown"
+        },
+        {
+          "id": "ReviewShowMarkupMenu",
+          "label": "Show Markup",
+          "type": "menu"
+        },
+        {
+          "id": "ReviewReviewingPaneMenu",
+          "label": "Reviewing Pane",
+          "type": "splitButton"
+        },
+        {
+          "id": "ReviewChangeTrackingOptions",
+          "label": "Change Tracking Options...",
+          "type": "button (dialogBoxLauncher)"
+        }
+      ]
+    },
+    {
+      "id": "GroupChanges",
+      "label": "GroupChanges",
+      "controls": [
+        {
+          "id": "ReviewAcceptChangeMenu",
+          "label": "Accept",
+          "type": "splitButton"
+        },
+        {
+          "id": "ReviewRejectChangeMenu",
+          "label": "Reject",
+          "type": "splitButton"
+        },
+        {
+          "id": "ReviewPreviousChange",
+          "label": "Previous",
+          "type": "button"
+        },
+        {
+          "id": "ReviewNextChange",
+          "label": "Next",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupCompare",
+      "label": "GroupCompare",
+      "controls": [
+        {
+          "id": "ReviewCompareMenu",
+          "label": "Compare",
+          "type": "menu"
+        }
+      ]
+    },
+    {
+      "id": "GroupProtect",
+      "label": "GroupProtect",
+      "controls": [
+        {
+          "id": "BlockAuthorsMenu",
+          "label": "Block Authors",
+          "type": "splitButton"
+        },
+        {
+          "id": "ReviewRestrictFormatting",
+          "label": "Restrict Editing",
+          "type": "toggleButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupInk",
+      "label": "GroupInk",
+      "controls": [
+        {
+          "id": "HideInkSplitButton",
+          "label": "Hide Ink Menu",
+          "type": "splitButton"
+        }
+      ]
+    }
+  ],
+  "View": [
+    {
+      "id": "GroupDocumentViews",
+      "label": "GroupDocumentViews",
+      "controls": [
+        {
+          "id": "ViewFullScreenReadingView",
+          "label": "Read Mode",
+          "type": "toggleButton"
+        },
+        {
+          "id": "ViewPrintLayoutView",
+          "label": "Print Layout",
+          "type": "toggleButton"
+        },
+        {
+          "id": "ViewWebLayoutView",
+          "label": "Web Layout",
+          "type": "toggleButton"
+        },
+        {
+          "id": "ViewOutlineView",
+          "label": "Outline",
+          "type": "toggleButton"
+        },
+        {
+          "id": "ViewDraftView",
+          "label": "Draft",
+          "type": "toggleButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupModes",
+      "label": "GroupModes",
+      "controls": [
+        {
+          "id": "ViewFocusModeView",
+          "label": "Focus",
+          "type": "toggleButton"
+        },
+        {
+          "id": "ToggleLearningTools",
+          "label": "Immersive Reader",
+          "type": "toggleButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupNightMode",
+      "label": "GroupNightMode",
+      "controls": [
+        {
+          "id": "DarkModeOn",
+          "label": "Switch Modes",
+          "type": "toggleButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupPageMovement",
+      "label": "GroupPageMovement",
+      "controls": [
+        {
+          "id": "VerticalPageMovement",
+          "label": "Vertical",
+          "type": "toggleButton"
+        },
+        {
+          "id": "TwoPageMode",
+          "label": "Side to Side",
+          "type": "toggleButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupViewShowHide",
+      "label": "GroupViewShowHide",
+      "controls": [
+        {
+          "id": "ViewRulerWord",
+          "label": "Ruler",
+          "type": "checkBox"
+        },
+        {
+          "id": "ViewGridlines",
+          "label": "View Gridlines",
+          "type": "checkBox"
+        },
+        {
+          "id": "NavigationPaneShowHide",
+          "label": "Navigation Pane",
+          "type": "checkBox"
+        }
+      ]
+    },
+    {
+      "id": "GroupZoom",
+      "label": "GroupZoom",
+      "controls": [
+        {
+          "id": "ZoomDialog",
+          "label": "Zoom...",
+          "type": "button"
+        },
+        {
+          "id": "ZoomCurrent100",
+          "label": "100%",
+          "type": "button"
+        },
+        {
+          "id": "ZoomOnePage",
+          "label": "One Page",
+          "type": "button"
+        },
+        {
+          "id": "ZoomTwoPages",
+          "label": "Multiple Pages",
+          "type": "button"
+        },
+        {
+          "id": "ZoomPageWidth",
+          "label": "Page Width",
+          "type": "button"
+        }
+      ]
+    },
+    {
+      "id": "GroupWindow",
+      "label": "GroupWindow",
+      "controls": [
+        {
+          "id": "WindowNew",
+          "label": "New Window",
+          "type": "button"
+        },
+        {
+          "id": "WindowsArrangeAll",
+          "label": "Arrange All",
+          "type": "button"
+        },
+        {
+          "id": "WindowSplit",
+          "label": "Split",
+          "type": "button"
+        },
+        {
+          "id": "WindowSideBySide",
+          "label": "View Side by Side",
+          "type": "toggleButton"
+        },
+        {
+          "id": "WindowSideBySideSynchronousScrolling",
+          "label": "Synchronous Scrolling",
+          "type": "toggleButton"
+        },
+        {
+          "id": "WindowResetPosition",
+          "label": "Reset Window Position",
+          "type": "button"
+        },
+        {
+          "id": "WindowSwitchWindowsMenuWord",
+          "label": "Switch Windows",
+          "type": "menu"
+        }
+      ]
+    },
+    {
+      "id": "GroupMacros",
+      "label": "GroupMacros",
+      "controls": [
+        {
+          "id": "MenuMacros",
+          "label": "Macros",
+          "type": "splitButton"
+        }
+      ]
+    },
+    {
+      "id": "GroupSharePointProperties",
+      "label": "GroupSharePointProperties",
+      "controls": [
+        {
+          "id": "DocumentInformationShowHide",
+          "label": "Properties",
+          "type": "toggleButton"
+        }
+      ]
+    }
+  ]
+}

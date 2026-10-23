@@ -1,0 +1,1629 @@
+{
+  "generatedAt": "2026-10-22T13:06:39.222Z",
+  "summary": {
+    "total": 202,
+    "STUB": 5,
+    "PASS": 154,
+    "DROPDOWN": 12,
+    "NO-OP": 31
+  },
+  "results": [
+    {
+      "tab": "Home",
+      "label": "Paste (Ctrl+V) [0]",
+      "kind": "big",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Cut (Ctrl+X) [1]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Copy (Ctrl+C) [2]",
+      "kind": "small",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Format Painter [3]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font [4]",
+      "kind": "combo",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Aptos",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Aptos Display",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Calibri",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Arial",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Times New Roman",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Georgia",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Garamond",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Cambria",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Segoe UI",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Tahoma",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Verdana",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Trebuchet MS",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Courier New",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Consolas",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Comic Sans MS",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Impact",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Franklin Gothic Medium",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Palatino Linotype",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Book Antiqua",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font > Lucida Console",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size [5]",
+      "kind": "combo",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 8",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 9",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 10",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 11",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 12",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 14",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 16",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 18",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 20",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 22",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 24",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 26",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 28",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 36",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 48",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Size > 72",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Grow Font [6]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Shrink Font [7]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Change Case [8]",
+      "kind": "small",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Change Case > Sentence case.",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Change Case > lowercase",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Change Case > UPPERCASE",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Change Case > Capitalize Each Word",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Change Case > tOGGLE cASE",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Clear Formatting [9]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Bold (Ctrl+B) [10]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Italic (Ctrl+I) [11]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Underline (Ctrl+U) [12]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Strikethrough [13]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Subscript [14]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Superscript [15]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Effects and Typography [16]",
+      "kind": "small",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Effects and Typography > None",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Effects and Typography > Shadow",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Effects and Typography > Glow",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Effects and Typography > Outline",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Effects and Typography > Outline and Shadow",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Effects and Typography > Text Effects and Typography…",
+      "kind": "popover-item",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color [17]",
+      "kind": "small",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 0)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 1)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 2)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 3)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 4)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 5)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 6)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 7)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 8)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 9)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 10)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 11)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 12)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 13)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 14)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > (item 15)",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Text Highlight Color > No Color",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color [18]",
+      "kind": "small",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #000000",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #7f7f7f",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #880015",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #ed1c24",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #ff7f27",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #fff200",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #22b14c",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #00a2e8",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #3f48cc",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #a349a4",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #ffffff",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #c3c3c3",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #b97a57",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #ffaec9",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #ffc90e",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #efe4b0",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #b5e61d",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #99d9ea",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #7092be",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #c8bfe7",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #2b579a",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #185abd",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #0f6cbd",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #2e74b5",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #c00000",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #548235",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #7030a0",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #833c00",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #1f4e79",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > #375623",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > Automatic",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Font Color > More Colors…",
+      "kind": "popover-item",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Bullets [19]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Numbering [20]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Multilevel List [21]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Decrease Indent [22]",
+      "kind": "small",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Increase Indent [23]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Sort [24]",
+      "kind": "small",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Sort > Sort Ascending",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Sort > Sort Descending",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Sort > Sort Numerically Ascending",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Sort > Sort Numerically Descending",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Show All [25]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Align Left [26]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Center [27]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Align Right [28]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Justify [29]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Line and Paragraph Spacing [30]",
+      "kind": "small",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Line and Paragraph Spacing > 1.0",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Line and Paragraph Spacing > 1.15",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Line and Paragraph Spacing > 1.5",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Line and Paragraph Spacing > 2.0",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Line and Paragraph Spacing > 2.5",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Line and Paragraph Spacing > 3.0",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Line and Paragraph Spacing > Paragraph Spacing Options…",
+      "kind": "popover-item",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Shading [31]",
+      "kind": "small",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Shading > No Color",
+      "kind": "popover-item",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Shading > #ffff00",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Shading > #00ff00",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Shading > #00ffff",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Shading > #ff00ff",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Shading > #0000ff",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Shading > #ff0000",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Shading > #000080",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Shading > #008080",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Shading > #008000",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Shading > #800080",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Borders [32]",
+      "kind": "small",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Borders > Bottom Border",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Borders > Top Border",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Borders > Left Border",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Borders > Right Border",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Borders > No Border",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Borders > All Borders",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Borders > Outside Borders",
+      "kind": "popover-item",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Normal [33]",
+      "kind": "style",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "No Spacing [34]",
+      "kind": "style",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Heading [35]",
+      "kind": "style",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Heading 2 [36]",
+      "kind": "style",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Heading 3 [37]",
+      "kind": "style",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "More styles [38]",
+      "kind": "style-more",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "More styles > Heading 4",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "More styles > Title",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "More styles > Subtitle",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "More styles > Quote",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "More styles > Intense Quote",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "More styles > Create a Style",
+      "kind": "popover-item",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "More styles > Clear Formatting",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":true,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":false,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "More styles > Table of Contents",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":true,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":false,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Find [39]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":true,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Replace [40]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":true,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Select [41]",
+      "kind": "small",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Select > Select All",
+      "kind": "popover-item",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Select > Select Objects",
+      "kind": "popover-item",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Home",
+      "label": "Add-ins [42]",
+      "kind": "big",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Table Design",
+      "label": "Shading [0]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Design",
+      "label": "Border Styles [1]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Design",
+      "label": "Line Weight [2]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Design",
+      "label": "Pen Color [3]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Design",
+      "label": "Borders [4]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Design",
+      "label": "Border Painter [5]",
+      "kind": "small",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Select [0]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Gridlines [1]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Properties [2]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Insert Above [3]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Insert Below [4]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Insert Left [5]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Insert Right [6]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Delete [7]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Merge Cells [8]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Split Cells [9]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Split Table [10]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "AutoFit [11]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Cell Margins [12]",
+      "kind": "small",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Text Direction [13]",
+      "kind": "small",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Sort [14]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Convert to Text [15]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Repeat Header Rows [16]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    },
+    {
+      "tab": "Table Layout",
+      "label": "Formula [17]",
+      "kind": "small",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": "Error: Node is detached from document"
+    }
+  ],
+  "errors": []
+}

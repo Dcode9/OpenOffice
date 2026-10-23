@@ -1,0 +1,13 @@
+node_modules/
+dist/
+dev.log
+*.log
+smoke-result.json
+verify-result.json
+downloads/
+shot-*.png
+.DS_Store
+research/videos/
+*.mp4
+*.part
+

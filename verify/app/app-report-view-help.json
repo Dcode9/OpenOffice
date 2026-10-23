@@ -1,0 +1,325 @@
+{
+  "generatedAt": "2026-10-20T08:25:59.396Z",
+  "summary": {
+    "total": 39,
+    "PASS": 16,
+    "NO-OP": 7,
+    "STUB": 13,
+    "DROPDOWN": 3
+  },
+  "results": [
+    {
+      "tab": "View",
+      "label": "Read Mode [0]",
+      "kind": "big",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":true,\"pageColor\":true,\"pageWidth\":true,\"columns\":true,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":true,\"grid\":true,\"statusText\":false,\"active\":true,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Print Layout [1]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Web Layout [2]",
+      "kind": "big",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":true,\"pageColor\":false,\"pageWidth\":true,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":true,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Outline [3]",
+      "kind": "small",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Draft [4]",
+      "kind": "small",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Focus [5]",
+      "kind": "big",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Immersive Reader [6]",
+      "kind": "big",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":true,\"pageColor\":true,\"pageWidth\":true,\"columns\":true,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":true,\"grid\":true,\"statusText\":false,\"active\":true,\"selection\":true,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Switch Modes [7]",
+      "kind": "big",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Vertical [8]",
+      "kind": "small",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Side to Side [9]",
+      "kind": "small",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Ruler [10]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":true,\"grid\":false,\"statusText\":false,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "View Gridlines [11]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":true,\"statusText\":false,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Navigation Pane [12]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":true,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":true,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Zoom [13]",
+      "kind": "big",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Zoom > 200%",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":true,\"pageColor\":false,\"pageWidth\":true,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":true,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Zoom > 150%",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":true,\"pageColor\":false,\"pageWidth\":true,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":true,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Zoom > 100%",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":true,\"pageColor\":false,\"pageWidth\":true,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":true,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Zoom > 75%",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":true,\"pageColor\":false,\"pageWidth\":true,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":true,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Zoom > 50%",
+      "kind": "popover-item",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":true,\"pageColor\":false,\"pageWidth\":true,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":true,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Zoom > Zoom…",
+      "kind": "popover-item",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "100% [14]",
+      "kind": "small",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "One Page [15]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":true,\"pageColor\":false,\"pageWidth\":true,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":true,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Multiple Pages [16]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":true,\"pageColor\":false,\"pageWidth\":true,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":true,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Page Width [17]",
+      "kind": "small",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":true,\"pageColor\":false,\"pageWidth\":true,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":true,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":true,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "New Window [18]",
+      "kind": "big",
+      "outcome": "PASS",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":true,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Arrange All [19]",
+      "kind": "big",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Split [20]",
+      "kind": "big",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "View Side by Side [21]",
+      "kind": "small",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Synchronous Scrolling [22]",
+      "kind": "small",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Reset Window Position [23]",
+      "kind": "small",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Switch Windows [24]",
+      "kind": "small",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Switch Windows > Document1 - Word",
+      "kind": "popover-item",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Macros [25]",
+      "kind": "big",
+      "outcome": "DROPDOWN",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":true}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Macros > No macros available",
+      "kind": "popover-item",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "View",
+      "label": "Macros > Macros…",
+      "kind": "popover-item",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Help",
+      "label": "Help [0]",
+      "kind": "big",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Help",
+      "label": "Contact Support [1]",
+      "kind": "big",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Help",
+      "label": "Keyboard Shortcuts [2]",
+      "kind": "big",
+      "outcome": "NO-OP",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":\"\",\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    },
+    {
+      "tab": "Help",
+      "label": "Feedback [3]",
+      "kind": "big",
+      "outcome": "STUB",
+      "note": "{\"html\":false,\"marks\":false,\"pageStyle\":false,\"pageColor\":false,\"pageWidth\":false,\"columns\":false,\"toast\":true,\"backstage\":false,\"find\":false,\"nav\":false,\"watermark\":false,\"ruler\":false,\"grid\":false,\"statusText\":false,\"active\":false,\"selection\":false,\"download\":false,\"print\":false,\"fileDialog\":false,\"exec\":false,\"fullscreen\":false,\"opened\":false,\"zoom\":false,\"popoverOpened\":false}",
+      "error": ""
+    }
+  ],
+  "errors": []
+}
