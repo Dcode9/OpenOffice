@@ -12,11 +12,14 @@ import { useWord } from '../../context'
 import { MenuItem, MenuLabel, MenuSep, Popover, RibbonGroup, SmallButton } from './ui'
 import {
   applyCellBorders,
+  applyTableBorderEdges,
   applyTableStyle,
   clearTableStyle,
   getTableAttrs,
+  insertHorizontalRule,
   setCellAttrs,
   setTableAttrs,
+  toggleDiagonalBorder,
   updateAllTableCells,
 } from '../../editor/actions'
 import { TEXT_COLORS } from '../../lib/constants'
@@ -180,13 +183,35 @@ export default function TableDesignTab() {
   if (!editor) return null
 
   const borderValue = `${lineWeight.replace(' pt', 'pt')} ${borderStyle} ${penColor}`
-  const options: [string, string][] = [
-    ['headerRow', 'Header Row'],
-    ['totalRow', 'Total Row'],
-    ['bandedRows', 'Banded Rows'],
-    ['firstColumn', 'First Column'],
-    ['lastColumn', 'Last Column'],
-    ['bandedColumns', 'Banded Columns'],
+  const options: { key: string; label: string; tooltip: string }[] = [
+    { key: 'headerRow', label: 'Header Row', tooltip: 'Header Row' },
+    {
+      key: 'totalRow',
+      label: 'Total Row',
+      tooltip: 'Total Row: Display special formatting for the last or total row of the table.',
+    },
+    {
+      key: 'bandedRows',
+      label: 'Banded Rows',
+      tooltip:
+        'Banded Rows: Display banded rows, in which even rows are formatted differently from odd rows. This banding can make tables easier to read.',
+    },
+    {
+      key: 'firstColumn',
+      label: 'First Column',
+      tooltip: 'First Column: Display special formatting for the first column of the table.',
+    },
+    {
+      key: 'lastColumn',
+      label: 'Last Column',
+      tooltip: 'Last Column: Display special formatting for the last column of the table.',
+    },
+    {
+      key: 'bandedColumns',
+      label: 'Banded Columns',
+      tooltip:
+        'Banded Columns: Display banded columns, in which even columns are formatted differently from odd columns. This banding can make tables easier to read.',
+    },
   ]
 
   const toggleOption = (key: string) => {
@@ -203,12 +228,13 @@ export default function TableDesignTab() {
     <>
       <RibbonGroup label="Table Style Options" className="table-design-options">
         <div className="table-options-ribbon">
-          {options.map(([key, label]) => (
-            <label className="check-row" key={key}>
+          {options.map(({ key, label, tooltip }) => (
+            <label className="check-row" key={key} title={tooltip}>
               <input
                 type="checkbox"
                 checked={Boolean(attrs[key] ?? (key === 'headerRow' || key === 'bandedRows'))}
                 onChange={() => toggleOption(key)}
+                title={tooltip}
               />
               {label}
             </label>
@@ -435,7 +461,7 @@ export default function TableDesignTab() {
               <MenuSep />
               <MenuItem
                 label="No Border"
-                onClick={() => { applyBorder(['top', 'bottom', 'left', 'right'], null); close() }}
+                onClick={() => { applyBorder(['top', 'bottom', 'left', 'right'], null, true); close() }}
               />
               <MenuItem
                 label="All Borders"
@@ -443,17 +469,80 @@ export default function TableDesignTab() {
               />
               <MenuItem
                 label="Outside Borders"
-                onClick={() => { applyBorder(['top', 'bottom', 'left', 'right'], borderValue, true); close() }}
+                onClick={() => {
+                  applyTableBorderEdges(editor, { top: true, bottom: true, left: true, right: true, insideH: false, insideV: false }, borderValue, false)
+                  toast('Outside borders applied')
+                  close()
+                }}
+              />
+              <MenuItem
+                label="Inside Borders"
+                onClick={() => {
+                  applyTableBorderEdges(editor, { top: false, bottom: false, left: false, right: false, insideH: true, insideV: true }, borderValue, false)
+                  toast('Inside borders applied')
+                  close()
+                }}
               />
               <MenuItem
                 label="Inside Horizontal Border"
-                onClick={() => { applyBorder(['top'], borderValue, true); close() }}
+                onClick={() => {
+                  applyTableBorderEdges(editor, { top: false, bottom: false, left: false, right: false, insideH: true, insideV: false }, borderValue, false)
+                  toast('Inside horizontal borders applied')
+                  close()
+                }}
               />
               <MenuItem
                 label="Inside Vertical Border"
-                onClick={() => { applyBorder(['left'], borderValue, true); close() }}
+                onClick={() => {
+                  applyTableBorderEdges(editor, { top: false, bottom: false, left: false, right: false, insideH: false, insideV: true }, borderValue, false)
+                  toast('Inside vertical borders applied')
+                  close()
+                }}
               />
               <MenuSep />
+              <MenuItem
+                label="Diagonal Down Border"
+                onClick={() => {
+                  toggleDiagonalBorder(editor, 'down')
+                  toast('Diagonal Down Border toggled')
+                  close()
+                }}
+              />
+              <MenuItem
+                label="Diagonal Up Border"
+                onClick={() => {
+                  toggleDiagonalBorder(editor, 'up')
+                  toast('Diagonal Up Border toggled')
+                  close()
+                }}
+              />
+              <MenuSep />
+              <MenuItem
+                label="Horizontal Line"
+                onClick={() => {
+                  insertHorizontalRule(editor)
+                  toast('Horizontal Line inserted')
+                  close()
+                }}
+              />
+              <MenuItem
+                label="Draw Table"
+                onClick={() => {
+                  setPainter(true)
+                  toast('Draw Table mode active: click cells to apply border')
+                  close()
+                }}
+              />
+              <MenuItem
+                label="View Gridlines"
+                active={attrs.tableGridlines !== false}
+                onClick={() => {
+                  const next = attrs.tableGridlines === false
+                  setTableAttrs(editor, { tableGridlines: next })
+                  toast(next ? 'Table gridlines on' : 'Table gridlines off')
+                  close()
+                }}
+              />
               <MenuItem label="Borders and Shading…" onClick={() => { setShowBorders(true); close() }} />
             </div>
           )}
@@ -462,6 +551,7 @@ export default function TableDesignTab() {
         <SmallButton
           icon={<Paintbrush size={16} />}
           label="Border Painter"
+          title="Border Painter"
           wide
           active={painter}
           onClick={() => setPainter(!painter)}

@@ -36,7 +36,9 @@ for (const tab of ['Design', 'Layout', 'References', 'Mailings', 'Review', 'Draw
 }
 
 await openTab('Design')
-const popover = await p.$('.style-set-gallery')
-console.log('styleSets', await popover.evaluate((el) => ({ cards: el.children.length, h: el.getBoundingClientRect().height, w: Math.round(el.getBoundingClientRect().width) })))
+const popover = await p.$('.ds-style-gallery, .style-set-gallery')
+if (popover) {
+  console.log('styleSets', await popover.evaluate((el) => ({ cards: el.children.length, h: el.getBoundingClientRect().height, w: Math.round(el.getBoundingClientRect().width) })))
+}
 console.log('errors', errors)
 await b.close()

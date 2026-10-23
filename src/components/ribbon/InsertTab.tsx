@@ -26,6 +26,7 @@ import {
 import { useWord } from '../../context'
 import { BigButton, MenuItem, MenuLabel, MenuSep, Popover, RibbonGroup, RibbonStack, SmallButton } from './ui'
 import { applyLink, insertImageFromFile, insertPageBreak, insertTable, insertText } from '../../editor/actions'
+import { createComment } from '../../editor/comments'
 import type { Editor } from '@tiptap/react'
 import { ShapesGallery } from '../insert/ShapesGallery'
 import { StockImagesDialog } from '../insert/PicturesGallery'
@@ -142,7 +143,7 @@ function SmallMenu({
 }
 
 export default function InsertTab() {
-  const { editor, toast } = useWord()
+  const { editor, toast, setShowCommentsPane } = useWord()
   const imgRef = useRef<HTMLInputElement>(null)
   const [showStock, setShowStock] = useState(false)
   const [showSmartArt, setShowSmartArt] = useState(false)
@@ -271,7 +272,14 @@ export default function InsertTab() {
       </RibbonGroup>
 
       <RibbonGroup label="Comments">
-        <BigButton icon={<MessageSquare size={22} />} label="Comment" onClick={() => toast('Comments panel coming soon')} />
+        <BigButton
+          icon={<MessageSquare size={22} />}
+          label="Comment"
+          onClick={() => {
+            setShowCommentsPane(true)
+            createComment(editor)
+          }}
+        />
       </RibbonGroup>
 
       <RibbonGroup label="Header & Footer">

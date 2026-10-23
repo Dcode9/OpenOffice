@@ -3,12 +3,10 @@ import type { ReactNode } from 'react'
 import {
   AppWindow,
   BookOpen,
-  BookText,
   Check,
   Columns3,
   Focus,
   Glasses,
-  Grid3x3,
   List,
   ListTree,
   Maximize2,
@@ -17,7 +15,6 @@ import {
   PanelLeft,
   Printer,
   Rows3,
-  Ruler,
   Split,
   Terminal,
   ZoomIn,
@@ -25,6 +22,7 @@ import {
 import { useWord } from '../../context'
 import { PAGE_SIZES } from '../../lib/constants'
 import { BigButton, MenuItem, MenuLabel, MenuSep, Popover, RibbonGroup, RibbonStack, SmallButton } from './ui'
+import ZoomDialog from '../ZoomDialog'
 
 function BigMenu({
   icon,
@@ -77,11 +75,15 @@ export default function ViewTab() {
     page,
     toast,
   } = useWord()
+
   const [movement, setMovement] = useState<'vertical' | 'side'>('vertical')
   const [darkMode, setDarkMode] = useState(true)
   const [windows, setWindows] = useState(1)
+  const [activeWindowIndex, setActiveWindowIndex] = useState(0)
   const [sideBySide, setSideBySide] = useState(false)
   const [sync, setSync] = useState(false)
+  const [split, setSplit] = useState(false)
+  const [showZoomDialog, setShowZoomDialog] = useState(false)
   const [macros] = useState<string[]>([])
 
   const pageSize = PAGE_SIZES[page.sizeKey] || PAGE_SIZES.letter
@@ -107,18 +109,56 @@ export default function ViewTab() {
   return (
     <>
       <RibbonGroup label="Views">
-        <BigButton icon={<BookOpen size={22} />} label="Read Mode" active={viewMode === 'read'} onClick={() => setViewMode(viewMode === 'read' ? 'print' : 'read')} />
-        <BigButton icon={<Printer size={22} />} label="Print Layout" active={viewMode === 'print'} onClick={() => setViewMode('print')} />
-        <BigButton icon={<Monitor size={22} />} label="Web Layout" active={viewMode === 'web'} onClick={() => setViewMode('web')} />
+        <BigButton
+          icon={<BookOpen size={22} />}
+          label="Read Mode"
+          active={viewMode === 'read'}
+          onClick={() => setViewMode(viewMode === 'read' ? 'print' : 'read')}
+        />
+        <BigButton
+          icon={<Printer size={22} />}
+          label="Print Layout"
+          active={viewMode === 'print'}
+          onClick={() => setViewMode('print')}
+        />
+        <BigButton
+          icon={<Monitor size={22} />}
+          label="Web Layout"
+          active={viewMode === 'web'}
+          onClick={() => setViewMode('web')}
+        />
         <RibbonStack>
-          <SmallButton icon={<ListTree size={15} />} label="Outline" wide onClick={() => toast('Outline view')} />
-          <SmallButton icon={<List size={15} />} label="Draft" wide onClick={() => { setViewMode('print'); toast('Draft view') }} />
+          <SmallButton
+            icon={<ListTree size={15} />}
+            label="Outline"
+            wide
+            onClick={() => {
+              setShowNav(true)
+              toast('Outline View: Headings outline opened in Navigation Pane')
+            }}
+          />
+          <SmallButton
+            icon={<List size={15} />}
+            label="Draft"
+            wide
+            onClick={() => {
+              setViewMode('print')
+              toast('Draft view')
+            }}
+          />
         </RibbonStack>
       </RibbonGroup>
 
       <RibbonGroup label="Immersive">
         <BigButton icon={<Focus size={22} />} label="Focus" onClick={() => toast('Focus mode')} />
-        <BigButton icon={<Glasses size={22} />} label="Immersive Reader" onClick={() => { setViewMode('read'); toast('Immersive Reader') }} />
+        <BigButton
+          icon={<Glasses size={22} />}
+          label="Immersive Reader"
+          onClick={() => {
+            setViewMode('read')
+            toast('Immersive Reader')
+          }}
+        />
       </RibbonGroup>
 
       <RibbonGroup label="Dark Mode">
@@ -135,8 +175,26 @@ export default function ViewTab() {
 
       <RibbonGroup label="Page Movement">
         <RibbonStack>
-          <SmallButton icon={<Rows3 size={15} />} label="Vertical" wide active={movement === 'vertical'} onClick={() => { setMovement('vertical'); toast('Vertical page movement') }} />
-          <SmallButton icon={<Columns3 size={15} />} label="Side to Side" wide active={movement === 'side'} onClick={() => { setMovement('side'); toast('Side to Side page movement') }} />
+          <SmallButton
+            icon={<Rows3 size={15} />}
+            label="Vertical"
+            wide
+            active={movement === 'vertical'}
+            onClick={() => {
+              setMovement('vertical')
+              toast('Vertical page movement')
+            }}
+          />
+          <SmallButton
+            icon={<Columns3 size={15} />}
+            label="Side to Side"
+            wide
+            active={movement === 'side'}
+            onClick={() => {
+              setMovement('side')
+              toast('Side to Side page movement')
+            }}
+          />
         </RibbonStack>
       </RibbonGroup>
 
@@ -148,43 +206,111 @@ export default function ViewTab() {
         </RibbonStack>
       </RibbonGroup>
 
-      <RibbonGroup label="Zoom">
+      <RibbonGroup label="Zoom" launcher={{ title: 'Zoom', onClick: () => setShowZoomDialog(true) }}>
         <BigMenu icon={<ZoomIn size={22} />} label="Zoom" width={170}>
           {(close) => (
             <div className="menu">
               {[200, 150, 100, 75, 50].map((p) => (
-                <MenuItem key={p} label={`${p}%`} onClick={() => { setZoom(p / 100); close() }} />
+                <MenuItem
+                  key={p}
+                  label={`${p}%`}
+                  active={Math.round(zoom * 100) === p}
+                  onClick={() => {
+                    setZoom(p / 100)
+                    close()
+                  }}
+                />
               ))}
               <MenuSep />
-              <MenuItem label="Zoom…" onClick={() => { toast('Zoom dialog'); close() }} />
+              <MenuItem
+                label="Zoom…"
+                onClick={() => {
+                  close()
+                  setShowZoomDialog(true)
+                }}
+              />
             </div>
           )}
         </BigMenu>
         <RibbonStack>
           <SmallButton label="100%" wide onClick={() => setZoom(1)} />
           <SmallButton label="One Page" wide onClick={fitOnePage} />
-          <SmallButton label="Multiple Pages" wide onClick={() => { setZoom(0.6); toast('Multiple Pages') }} />
+          <SmallButton label="Multiple Pages" wide onClick={() => { setZoom(0.6); toast('Multiple Pages: 60%') }} />
           <SmallButton label="Page Width" wide onClick={fitPageWidth} />
         </RibbonStack>
       </RibbonGroup>
 
       <RibbonGroup label="Window">
-        <BigButton icon={<AppWindow size={22} />} label="New Window" onClick={() => { setWindows(windows + 1); window.open(window.location.href, '_blank'); toast('New Window') }} />
-        <BigButton icon={<Maximize2 size={22} />} label="Arrange All" onClick={() => toast('Arrange All')} />
-        <BigButton icon={<Split size={22} />} label="Split" onClick={() => toast('Split view')} />
+        <BigButton
+          icon={<AppWindow size={22} />}
+          label="New Window"
+          onClick={() => {
+            setWindows((w) => w + 1)
+            window.open(window.location.href, '_blank')
+            toast('New Window opened')
+          }}
+        />
+        <BigButton icon={<Maximize2 size={22} />} label="Arrange All" onClick={() => toast('Windows arranged')} />
+        <BigButton
+          icon={<Split size={22} />}
+          label="Split"
+          active={split}
+          onClick={() => {
+            const next = !split
+            setSplit(next)
+            toast(next ? 'Split view enabled' : 'Split removed')
+          }}
+        />
         <RibbonStack>
-          <SmallButton icon={<PanelLeft size={15} />} label="View Side by Side" wide disabled={windows < 2} active={sideBySide} onClick={() => { setSideBySide(!sideBySide); toast(sideBySide ? 'Side by side off' : 'View Side by Side') }} />
-          <SmallButton icon={<Rows3 size={15} />} label="Synchronous Scrolling" wide disabled={!sideBySide} active={sync} onClick={() => { setSync(!sync); toast(sync ? 'Synchronous scrolling off' : 'Synchronous Scrolling') }} />
-          <SmallButton icon={<Maximize2 size={15} />} label="Reset Window Position" wide disabled={!sideBySide} onClick={() => toast('Window position reset')} />
+          <SmallButton
+            icon={<PanelLeft size={15} />}
+            label="View Side by Side"
+            wide
+            disabled={windows < 2}
+            active={sideBySide}
+            onClick={() => {
+              setSideBySide(!sideBySide)
+              toast(sideBySide ? 'Side by side off' : 'View Side by Side')
+            }}
+          />
+          <SmallButton
+            icon={<Rows3 size={15} />}
+            label="Synchronous Scrolling"
+            wide
+            disabled={!sideBySide}
+            active={sync}
+            onClick={() => {
+              setSync(!sync)
+              toast(sync ? 'Synchronous scrolling off' : 'Synchronous Scrolling')
+            }}
+          />
+          <SmallButton
+            icon={<Maximize2 size={15} />}
+            label="Reset Window Position"
+            wide
+            disabled={!sideBySide}
+            onClick={() => toast('Window position reset')}
+          />
           <Popover
             width={220}
-            trigger={({ toggle }) => <SmallButton icon={<AppWindow size={15} />} label="Switch Windows" wide caret onClick={toggle} onCaret={toggle} />}
+            trigger={({ toggle }) => (
+              <SmallButton icon={<AppWindow size={15} />} label="Switch Windows" wide caret onClick={toggle} onCaret={toggle} />
+            )}
           >
             {(close) => (
               <div className="menu">
                 <MenuLabel>Switch Windows</MenuLabel>
                 {Array.from({ length: windows }, (_, i) => (
-                  <MenuItem key={i} label={`Document1 - Word${i ? ` : ${i + 1}` : ''}`} active={i === 0} onClick={() => { toast('Switched window'); close() }} />
+                  <MenuItem
+                    key={i}
+                    label={`Document1 - Word${i ? ` : ${i + 1}` : ''}`}
+                    active={i === activeWindowIndex}
+                    onClick={() => {
+                      setActiveWindowIndex(i)
+                      toast(`Switched to Window ${i + 1}`)
+                      close()
+                    }}
+                  />
                 ))}
               </div>
             )}
@@ -196,13 +322,31 @@ export default function ViewTab() {
         <BigMenu icon={<Terminal size={22} />} label="Macros" width={220}>
           {(close) => (
             <div className="menu">
-              {macros.length === 0 ? <MenuItem label="No macros available" disabled /> : macros.map((m) => <MenuItem key={m} label={m} onClick={close} />)}
+              {macros.length === 0 ? (
+                <MenuItem label="No macros available" disabled />
+              ) : (
+                macros.map((m) => <MenuItem key={m} label={m} onClick={close} />)
+              )}
               <MenuSep />
               <MenuItem label="Macros…" onClick={() => { toast('Macros dialog'); close() }} />
             </div>
           )}
         </BigMenu>
       </RibbonGroup>
+
+      {/* Zoom Dialog */}
+      {showZoomDialog && (
+        <ZoomDialog
+          initialZoom={zoom}
+          onApply={(level) => {
+            setZoom(level)
+            toast(`Zoom: ${Math.round(level * 100)}%`)
+          }}
+          onFitWidth={fitPageWidth}
+          onFitPage={fitOnePage}
+          onClose={() => setShowZoomDialog(false)}
+        />
+      )}
     </>
   )
 }

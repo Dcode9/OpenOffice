@@ -7,6 +7,7 @@ import {
   Eraser,
   Grid3x3,
   Rows3,
+  Sigma,
   Table2,
   TextCursorInput,
 } from 'lucide-react'
@@ -32,6 +33,7 @@ import {
 import InsertCellsDialog from '../InsertCellsDialog'
 import TablePropertiesDialog from '../TablePropertiesDialog'
 import SortTableDialog from '../SortTableDialog'
+import TableFormulaDialog from '../TableFormulaDialog'
 
 function BigMenu({
   icon,
@@ -86,6 +88,7 @@ export default function TableLayoutTab() {
   const [showDeleteCells, setShowDeleteCells] = useState(false)
   const [showProperties, setShowProperties] = useState(false)
   const [showSort, setShowSort] = useState(false)
+  const [showFormula, setShowFormula] = useState(false)
 
   const tableAttrs = editor ? getTableAttrs(editor) : {}
   const cellAttrs = editor
@@ -128,15 +131,16 @@ export default function TableLayoutTab() {
           {(close) => (
             <div className="menu">
               <MenuItem label="Select Cell" onClick={() => { selectCellAtCursor(editor); close() }} />
-              <MenuItem label="Select Row" onClick={() => { selectRowAtCursor(editor); close() }} />
               <MenuItem label="Select Column" onClick={() => { selectColumnAtCursor(editor); close() }} />
+              <MenuItem label="Select Row" onClick={() => { selectRowAtCursor(editor); close() }} />
               <MenuItem label="Select Table" onClick={() => { selectTable(editor); close() }} />
             </div>
           )}
         </BigMenu>
         <BigButton
           icon={<Grid3x3 size={22} />}
-          label="Gridlines"
+          label="View Gridlines"
+          title="View Gridlines: Show or hide the gridlines in the table."
           active={tableAttrs.tableGridlines !== false}
           onClick={() => {
             const next = tableAttrs.tableGridlines === false
@@ -147,6 +151,7 @@ export default function TableLayoutTab() {
         <BigButton
           icon={<Table2 size={22} />}
           label="Properties"
+          title="Properties: Open the Table Properties dialog box to change advanced table properties."
           onClick={() => setShowProperties(true)}
         />
       </RibbonGroup>
@@ -160,8 +165,8 @@ export default function TableLayoutTab() {
           {(close) => (
             <div className="menu">
               <MenuItem label="Delete Cells…" onClick={() => { setShowDeleteCells(true); close() }} />
-              <MenuItem label="Delete Rows" onClick={() => { editor.chain().focus().deleteRow().run(); close() }} />
               <MenuItem label="Delete Columns" onClick={() => { editor.chain().focus().deleteColumn().run(); close() }} />
+              <MenuItem label="Delete Rows" onClick={() => { editor.chain().focus().deleteRow().run(); close() }} />
               <MenuItem label="Delete Table" onClick={() => { editor.chain().focus().deleteTable().run(); close() }} />
             </div>
           )}
@@ -169,21 +174,25 @@ export default function TableLayoutTab() {
         <BigButton
           icon={<Rows3 size={22} />}
           label="Insert Above"
+          title="Insert Above: Add a new row directly above the selected row."
           onClick={() => editor.chain().focus().addRowBefore().run()}
         />
         <BigButton
           icon={<Rows3 size={22} />}
           label="Insert Below"
+          title="Insert Below: Add a new row directly below the selected row."
           onClick={() => editor.chain().focus().addRowAfter().run()}
         />
         <BigButton
           icon={<Columns3 size={22} />}
           label="Insert Left"
+          title="Insert Left: Add a new column directly to the left of the selected column."
           onClick={() => editor.chain().focus().addColumnBefore().run()}
         />
         <BigButton
           icon={<Columns3 size={22} />}
           label="Insert Right"
+          title="Insert Right: Add a new column directly to the right of the selected column."
           onClick={() => editor.chain().focus().addColumnAfter().run()}
         />
       </RibbonGroup>
@@ -192,16 +201,19 @@ export default function TableLayoutTab() {
         <BigButton
           icon={<Table2 size={22} />}
           label="Merge Cells"
+          title="Merge Cells: Merge the selected cells into one cell."
           onClick={() => editor.chain().focus().mergeCells().run()}
         />
         <BigButton
           icon={<Columns3 size={22} />}
           label="Split Cells"
+          title="Split Cells: Split the current cell into multiple cells."
           onClick={() => editor.chain().focus().splitCell().run()}
         />
         <BigButton
           icon={<ArrowLeftRight size={22} />}
           label="Split Table"
+          title="Split Table: Split the table into two tables at the current row."
           onClick={() => {
             const ok = splitTableAtCursor(editor)
             toast(ok ? 'Table split' : 'Select a row below the first row to split the table')
@@ -216,35 +228,104 @@ export default function TableLayoutTab() {
               <MenuItem label="AutoFit Contents" onClick={() => { setAutoFit(editor, 'contents'); close() }} />
               <MenuItem label="AutoFit Window" onClick={() => { setAutoFit(editor, 'window'); close() }} />
               <MenuItem label="Fixed Column Width" onClick={() => { setAutoFit(editor, 'fixed'); close() }} />
-              <MenuSep />
-              <MenuItem label="Distribute Rows Evenly" onClick={() => { distributeRows(editor); close() }} />
-              <MenuItem label="Distribute Columns Evenly" onClick={() => { distributeColumns(editor); close() }} />
             </div>
           )}
         </BigMenu>
         <div className="table-size-inputs">
-          <label>
+          <label title="Table Row Height">
             <span>Height:</span>
             <input
               type="number"
               min={1}
+              step={1}
               value={rowHeight}
               placeholder="Auto"
               onChange={(e) => setHeight(e.target.value)}
             />
             <span>pt</span>
+            <div className="table-spinners">
+              <button
+                type="button"
+                className="table-spinner-btn"
+                title="Increase Height"
+                onClick={() => {
+                  const val = Math.max(1, (Number(rowHeight) || 20) + 2)
+                  setHeight(String(val))
+                }}
+              >
+                ▲
+              </button>
+              <button
+                type="button"
+                className="table-spinner-btn"
+                title="Decrease Height"
+                onClick={() => {
+                  const val = Math.max(1, (Number(rowHeight) || 20) - 2)
+                  setHeight(String(val))
+                }}
+              >
+                ▼
+              </button>
+            </div>
           </label>
-          <label>
+          <label title="Table Column Width">
             <span>Width:</span>
             <input
               type="number"
               min={1}
+              step={5}
               value={colWidth}
               placeholder="Auto"
               onChange={(e) => setWidth(e.target.value)}
             />
             <span>px</span>
+            <div className="table-spinners">
+              <button
+                type="button"
+                className="table-spinner-btn"
+                title="Increase Width"
+                onClick={() => {
+                  const val = Math.max(10, (Number(colWidth) || 80) + 10)
+                  setWidth(String(val))
+                }}
+              >
+                ▲
+              </button>
+              <button
+                type="button"
+                className="table-spinner-btn"
+                title="Decrease Width"
+                onClick={() => {
+                  const val = Math.max(10, (Number(colWidth) || 80) - 10)
+                  setWidth(String(val))
+                }}
+              >
+                ▼
+              </button>
+            </div>
           </label>
+        </div>
+        <div className="table-distribute-stack">
+          <SmallButton
+            icon={<Rows3 size={15} />}
+            label="Distribute Rows"
+            title="Distribute Rows: Distribute the height of the selected rows equally among them."
+            wide
+            onClick={() => {
+              distributeRows(editor)
+              toast('Rows distributed evenly')
+            }}
+          />
+          <SmallButton
+            icon={<Columns3 size={15} />}
+            label="Distribute Columns"
+            title="Distribute Columns: Distribute the width of the selected columns equally among them."
+            wide
+            onClick={() => {
+              distributeColumns(editor)
+              toast('Columns distributed evenly')
+            }}
+          />
         </div>
       </RibbonGroup>
 
@@ -274,9 +355,35 @@ export default function TableLayoutTab() {
         </div>
         <div className="table-align-extra">
           <Popover
+            width={200}
+            trigger={({ toggle }) => (
+              <SmallButton
+                icon={<TextCursorInput size={15} />}
+                label="Text Direction"
+                title="Text Direction: Change the text direction within the selected cells."
+                wide
+                onClick={toggle}
+              />
+            )}
+          >
+            {(close) => (
+              <div className="menu">
+                <MenuItem label="Horizontal" onClick={() => { setCellAttrs(editor, { cellTextDirection: 'lrtb' }); close() }} />
+                <MenuItem label="Rotate All Text 90°" onClick={() => { setCellAttrs(editor, { cellTextDirection: 'tbrl' }); close() }} />
+                <MenuItem label="Rotate All Text 270°" onClick={() => { setCellAttrs(editor, { cellTextDirection: 'btlr' }); close() }} />
+              </div>
+            )}
+          </Popover>
+          <Popover
             width={210}
             trigger={({ toggle }) => (
-              <SmallButton icon={<Grid3x3 size={15} />} label="Cell Margins" wide onClick={toggle} />
+              <SmallButton
+                icon={<Grid3x3 size={15} />}
+                label="Cell Margins"
+                title="Cell Margins: Customize cell margins and spacing between cells."
+                wide
+                onClick={toggle}
+              />
             )}
           >
             {(close) => (
@@ -297,20 +404,6 @@ export default function TableLayoutTab() {
               </div>
             )}
           </Popover>
-          <Popover
-            width={200}
-            trigger={({ toggle }) => (
-              <SmallButton icon={<TextCursorInput size={15} />} label="Text Direction" wide onClick={toggle} />
-            )}
-          >
-            {(close) => (
-              <div className="menu">
-                <MenuItem label="Horizontal" onClick={() => { setCellAttrs(editor, { cellTextDirection: 'lrtb' }); close() }} />
-                <MenuItem label="Rotate All Text 90°" onClick={() => { setCellAttrs(editor, { cellTextDirection: 'tbrl' }); close() }} />
-                <MenuItem label="Rotate All Text 270°" onClick={() => { setCellAttrs(editor, { cellTextDirection: 'btlr' }); close() }} />
-              </div>
-            )}
-          </Popover>
         </div>
       </RibbonGroup>
 
@@ -318,27 +411,31 @@ export default function TableLayoutTab() {
         <BigButton
           icon={<ArrowDownAZ size={22} />}
           label="Sort"
+          title="Sort: Arrange the current selection in alphabetical or numerical order."
           onClick={() => setShowSort(true)}
         />
         <BigButton
           icon={<Rows3 size={22} />}
           label="Repeat Header Rows"
+          title="Repeat Header Rows: Repeat the header row across pages for long tables."
           active={tableAttrs.headerRow === true}
           onClick={() => setTableAttrs(editor, { headerRow: !(tableAttrs.headerRow ?? true) })}
         />
         <BigButton
           icon={<TextCursorInput size={22} />}
           label="Convert to Text"
+          title="Convert to Text: Convert the table into regular text paragraphs."
           onClick={() => {
             convertTableToText(editor)
             toast('Table converted to text')
           }}
         />
         <SmallButton
-          icon={<Grid3x3 size={15} />}
+          icon={<Sigma size={15} />}
           label="Formula"
+          title="Formula: Add a formula to a cell to perform a calculation such as AVERAGE, SUM, or COUNT."
           wide
-          onClick={() => toast('Formula: use =SUM(ABOVE) or =AVERAGE(LEFT) in a cell')}
+          onClick={() => setShowFormula(true)}
         />
       </RibbonGroup>
 
@@ -346,6 +443,7 @@ export default function TableLayoutTab() {
       {showDeleteCells && <InsertCellsDialog mode="delete" onApply={(m) => { deleteCells(editor, m); setShowDeleteCells(false) }} onClose={() => setShowDeleteCells(false)} />}
       {showProperties && <TablePropertiesDialog editor={editor} onClose={() => setShowProperties(false)} />}
       {showSort && <SortTableDialog editor={editor} onClose={() => setShowSort(false)} />}
+      {showFormula && <TableFormulaDialog editor={editor} onClose={() => setShowFormula(false)} />}
     </>
   )
 }

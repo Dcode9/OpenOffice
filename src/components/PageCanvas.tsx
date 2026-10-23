@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { EditorContent } from '@tiptap/react'
 import { useWord } from '../context'
 import { PAGE_SIZES } from '../lib/constants'
@@ -21,6 +22,8 @@ export default function PageCanvas() {
     setHeaderText,
     setFooterText,
   } = useWord()
+
+  const [hideWhiteSpace, setHideWhiteSpace] = useState(false)
 
   if (!editor) return null
 
@@ -50,16 +53,32 @@ export default function PageCanvas() {
       )}
       <div className="pages-scroll">
         <div
-          className={`page-wrap${pageBorders ? ' bordered' : ''}${showGridlines ? ' gridlines' : ''}`}
+          className={`page-wrap${pageBorders ? ' bordered' : ''}${showGridlines ? ' gridlines' : ''}${hideWhiteSpace ? ' compact' : ''}`}
           style={{
             width: web ? '100%' : pageW,
-            minHeight: web ? 'auto' : pageH,
+            minHeight: web ? 'auto' : hideWhiteSpace ? 'auto' : pageH,
             background: page.pageColor,
             zoom,
           }}
         >
-          {showHeader && (
-            <div className="hf-zone hf-header" style={{ paddingLeft: left, paddingRight: right }}>
+          {!web && (
+            <div
+              className="top-margin-whitespace"
+              title={hideWhiteSpace ? 'Double-click to show white space' : 'Double-click to hide white space'}
+              onDoubleClick={() => setHideWhiteSpace((v) => !v)}
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                height: hideWhiteSpace ? 20 : (showHeader ? 40 : top),
+                cursor: 'pointer',
+                zIndex: 5,
+              }}
+            />
+          )}
+          {showHeader && !hideWhiteSpace && (
+            <div className="hf-zone hf-header" style={{ paddingLeft: left, paddingRight: right, zIndex: 6 }}>
               <input
                 className="hf-input"
                 value={headerText}
@@ -71,17 +90,17 @@ export default function PageCanvas() {
           <div
             className={`doc-body${page.columns > 1 ? ' cols' : ''}`}
             style={{
-              paddingTop: web ? 32 : (showHeader ? 40 : top),
+              paddingTop: web ? 32 : hideWhiteSpace ? 16 : (showHeader ? 40 : top),
               paddingRight: web ? 40 : right,
-              paddingBottom: web ? 64 : (showFooter ? 40 : bottom),
+              paddingBottom: web ? 64 : hideWhiteSpace ? 16 : (showFooter ? 40 : bottom),
               paddingLeft: web ? 40 : left,
               columnCount: page.columns,
             }}
           >
             <EditorContent editor={editor} className="doc-editor" />
           </div>
-          {showFooter && (
-            <div className="hf-zone hf-footer" style={{ paddingLeft: left, paddingRight: right }}>
+          {showFooter && !hideWhiteSpace && (
+            <div className="hf-zone hf-footer" style={{ paddingLeft: left, paddingRight: right, zIndex: 6 }}>
               <input
                 className="hf-input"
                 value={footerText}

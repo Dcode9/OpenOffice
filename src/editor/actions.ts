@@ -206,10 +206,42 @@ export function applyDocumentStyle(editor: Editor, style: StyleDef) {
   }
 }
 
-export function setBorder(editor: Editor, sides: 'top' | 'bottom' | 'left' | 'right' | 'none' | 'all' | 'outside') {
+export function setBorder(
+  editor: Editor,
+  sides: 'top' | 'bottom' | 'left' | 'right' | 'none' | 'all' | 'outside' | 'inside',
+) {
   const blocks = selectedBlocks(editor)
   if (!blocks.length) return
   const tr = editor.state.tr
+  if (sides === 'inside') {
+    if (blocks.length <= 1) {
+      const { node, pos } = blocks[0]
+      const current = String(node.attrs.borderSides || '').split(',').filter(Boolean)
+      const next = Array.from(new Set([...current, 'bottom']))
+      tr.setNodeMarkup(pos, undefined, {
+        ...node.attrs,
+        borderSides: next.join(','),
+        borderColor: node.attrs.borderColor || '#000000',
+        borderWidth: node.attrs.borderWidth || '1px',
+      })
+    } else {
+      blocks.forEach(({ node, pos }, idx) => {
+        if (idx < blocks.length - 1) {
+          const current = String(node.attrs.borderSides || '').split(',').filter(Boolean)
+          const next = Array.from(new Set([...current, 'bottom']))
+          tr.setNodeMarkup(pos, undefined, {
+            ...node.attrs,
+            borderSides: next.join(','),
+            borderColor: node.attrs.borderColor || '#000000',
+            borderWidth: node.attrs.borderWidth || '1px',
+          })
+        }
+      })
+    }
+    editor.view.dispatch(tr)
+    editor.commands.focus()
+    return
+  }
   for (const { node, pos } of blocks) {
     const current = String(node.attrs.borderSides || '').split(',').filter(Boolean)
     let next: string[] = current
@@ -609,13 +641,28 @@ export function splitTableAtCursor(editor: Editor) {
 }
 
 
-function currentCellPosition(editor: Editor) {
+export function currentCellPosition(editor: Editor) {
   const { $from } = editor.state.selection
   for (let depth = $from.depth; depth > 0; depth--) {
     const name = $from.node(depth).type.name
     if (name === 'tableCell' || name === 'tableHeader') return $from.before(depth)
   }
   return null
+}
+
+export function toggleDiagonalBorder(editor: Editor, direction: 'down' | 'up') {
+  if (!editor.isActive('table')) return
+  const attrs = { ...editor.getAttributes('tableHeader'), ...editor.getAttributes('tableCell') }
+  const current = attrs.cellBorderDiagonal as string | undefined
+  let next: string | null = direction
+  if (current === direction) {
+    next = null
+  } else if (current && (current === 'down' || current === 'up')) {
+    next = 'both'
+  } else if (current === 'both') {
+    next = direction === 'down' ? 'up' : 'down'
+  }
+  setCellAttrs(editor, { cellBorderDiagonal: next })
 }
 
 export function selectCellAtCursor(editor: Editor) {

@@ -35,17 +35,22 @@ import { useWord } from '../../context'
 import { BigButton, MenuItem, MenuLabel, MenuSep, Popover, RibbonGroup, RibbonRow, RibbonStack, SmallButton } from './ui'
 import {
   applyBulletList,
+  applyCellBorders,
   applyDocumentStyle,
   applyMultilevelList,
   applyNumberedList,
+  applyTableBorderEdges,
   applyUnderlineStyle,
   changeCase,
   clearFormatting,
   indent,
+  insertHorizontalRule,
+  insertTable,
   insertTOC,
   setBorder,
   setFontSize,
   setLineHeight,
+  setParagraphFormat,
   setShading,
   setTextStyle,
   sortParagraphs,
@@ -64,6 +69,7 @@ import NumberFormatDialog from '../NumberFormatDialog'
 import MultilevelDialog from '../MultilevelDialog'
 import PasteSpecialDialog from '../PasteSpecialDialog'
 import DefaultPasteDialog from '../DefaultPasteDialog'
+import SelectionPane from '../layout/SelectionPane'
 
 const BULLET_LIBRARY = [
   ['•', 'disc', 'Solid circle'],
@@ -193,8 +199,83 @@ function ColorButton({
   )
 }
 
+function selectAllSimilarFormatting(editor: any, toast: (msg: string) => void) {
+  const doc = editor.state.doc
+
+  const isBold = editor.isActive('bold')
+  const isItalic = editor.isActive('italic')
+  const isUnderline = editor.isActive('underline')
+  const isStrike = editor.isActive('strike')
+  const isSubscript = editor.isActive('subscript')
+  const isSuperscript = editor.isActive('superscript')
+  const textStyle = editor.getAttributes('textStyle') || {}
+  const targetFont = textStyle.fontFamily || null
+  const targetSize = textStyle.fontSize || null
+  const targetColor = textStyle.color || null
+  const targetHighlight = editor.getAttributes('highlight').color || null
+
+  const headingLevel = editor.isActive('heading') ? editor.getAttributes('heading').level : null
+
+  const matches: { from: number; to: number }[] = []
+
+  if (headingLevel) {
+    doc.descendants((node: any, pos: number) => {
+      if (node.type?.name === 'heading' && node.attrs?.level === headingLevel) {
+        matches.push({ from: pos + 1, to: pos + node.nodeSize - 1 })
+        return false
+      }
+      return true
+    })
+  } else {
+    doc.descendants((node: any, pos: number) => {
+      if (node.isText) {
+        const marks = node.marks || []
+        const hasBold = marks.some((m: any) => m.type.name === 'bold')
+        const hasItalic = marks.some((m: any) => m.type.name === 'italic')
+        const hasUnderline = marks.some((m: any) => m.type.name === 'underline')
+        const hasStrike = marks.some((m: any) => m.type.name === 'strike')
+        const hasSub = marks.some((m: any) => m.type.name === 'subscript')
+        const hasSup = marks.some((m: any) => m.type.name === 'superscript')
+        const tsMark = marks.find((m: any) => m.type.name === 'textStyle')
+        const hlMark = marks.find((m: any) => m.type.name === 'highlight')
+
+        const fontMatch = !targetFont || tsMark?.attrs?.fontFamily === targetFont
+        const sizeMatch = !targetSize || tsMark?.attrs?.fontSize === targetSize
+        const colorMatch = !targetColor || tsMark?.attrs?.color === targetColor
+        const hlMatch = !targetHighlight || hlMark?.attrs?.color === targetHighlight
+
+        if (
+          hasBold === isBold &&
+          hasItalic === isItalic &&
+          hasUnderline === isUnderline &&
+          hasStrike === isStrike &&
+          hasSub === isSubscript &&
+          hasSup === isSuperscript &&
+          fontMatch &&
+          sizeMatch &&
+          colorMatch &&
+          hlMatch
+        ) {
+          matches.push({ from: pos, to: pos + node.nodeSize })
+        }
+      }
+      return true
+    })
+  }
+
+  if (matches.length === 0) {
+    toast('No text with similar formatting found')
+    return
+  }
+
+  const minFrom = matches[0].from
+  const maxTo = matches[matches.length - 1].to
+  editor.chain().focus().setTextSelection({ from: minFrom, to: maxTo }).run()
+  toast(`Selected text with similar formatting (${matches.length} matching segment${matches.length === 1 ? '' : 's'})`)
+}
+
 export default function HomeTab() {
-  const { editor, toast, setShowClipboardPane, setShowStylesPane } = useWord()
+  const { editor, toast, setShowClipboardPane, setShowStylesPane, showGridlines, setShowGridlines } = useWord()
   const [, tick] = useReducer((n: number) => n + 1, 0)
   const [showFont, setShowFont] = useState(false)
   const [fontEffects, setFontEffects] = useState(false)
@@ -210,6 +291,7 @@ export default function HomeTab() {
   const [showDefaultPaste, setShowDefaultPaste] = useState(false)
   const [showMarks, setShowMarks] = useState(false)
   const [selectObjects, setSelectObjects] = useState(false)
+  const [showSelectionPane, setShowSelectionPane] = useState(false)
   const [painterActive, setPainterActive] = useState(Boolean(getPainter()))
 
   useEffect(() => {
@@ -324,7 +406,7 @@ export default function HomeTab() {
         <RibbonStack>
           <SmallButton icon={<Scissors size={15} />} title="Cut (Ctrl+X)" onClick={() => copy(true)} />
           <SmallButton icon={<Copy size={15} />} title="Copy (Ctrl+C)" onClick={() => copy(false)} />
-          <SmallButton icon={<Paintbrush size={15} />} title="Format Painter" active={painterActive} onClick={togglePainter} />
+          <SmallButton icon={<Paintbrush size={15} />} title="Format Painter (Ctrl+Shift+C, Ctrl+Shift+V) - Like the look of a particular selection? You can apply that look to other content in the document." active={painterActive} onClick={togglePainter} />
         </RibbonStack>
       </RibbonGroup>
 
@@ -386,9 +468,9 @@ export default function HomeTab() {
               )}
             </Popover>
 
-            <SmallButton icon={<span className="grow-font">A</span>} title="Grow Font" onClick={() => setFontSize(editor, Math.min(1638, currentSize + 1))} />
-            <SmallButton icon={<span className="shrink-font">A</span>} title="Shrink Font" onClick={() => setFontSize(editor, Math.max(1, currentSize - 1))} />
-            <Popover trigger={({ toggle }) => <SmallButton icon={<CaseSensitive size={16} />} title="Change Case" onClick={toggle} />}>
+            <SmallButton icon={<span className="grow-font">A</span>} title="Increase Font Size (Ctrl+Shift+>) - Make your text a bit bigger." onClick={() => setFontSize(editor, Math.min(1638, currentSize + 1))} />
+            <SmallButton icon={<span className="shrink-font">A</span>} title="Decrease Font Size (Ctrl+Shift+<) - Make your text a bit smaller." onClick={() => setFontSize(editor, Math.max(1, currentSize - 1))} />
+            <Popover trigger={({ toggle }) => <SmallButton icon={<CaseSensitive size={16} />} title="Change Case - Change the selected text to uppercase, lowercase, or other common capitalizations." onClick={toggle} />}>
               {(close) => (
                 <div className="menu">
                   <MenuItem label="Sentence case." onClick={() => { changeCase(editor, 'sentence'); close() }} />
@@ -399,7 +481,7 @@ export default function HomeTab() {
                 </div>
               )}
             </Popover>
-            <SmallButton icon={<Eraser size={16} />} title="Clear Formatting" onClick={() => { clearFormatting(editor); toast('Formatting cleared') }} />
+            <SmallButton icon={<Eraser size={16} />} title="Clear All Formatting - Remove all formatting from the selection, leaving only the normal, unformatted text." onClick={() => { clearFormatting(editor); toast('Formatting cleared') }} />
           </RibbonRow>
           <RibbonRow>
             <SmallButton icon={<Bold size={16} />} title="Bold (Ctrl+B)" active={editor.isActive('bold')} onClick={() => editor.chain().focus().toggleBold().run()} />
@@ -444,10 +526,10 @@ export default function HomeTab() {
                 </div>
               )}
             </Popover>
-            <SmallButton icon={<Strikethrough size={16} />} title="Strikethrough" active={editor.isActive('strike')} onClick={() => editor.chain().focus().toggleStrike().run()} />
-            <SmallButton icon={<Subscript size={16} />} title="Subscript" active={editor.isActive('subscript')} onClick={() => editor.chain().focus().toggleSubscript().run()} />
-            <SmallButton icon={<Superscript size={16} />} title="Superscript" active={editor.isActive('superscript')} onClick={() => editor.chain().focus().toggleSuperscript().run()} />
-            <Popover trigger={({ toggle }) => <SmallButton icon={<span className="text-effects-icon">A</span>} title="Text Effects and Typography" onClick={toggle} />}>
+            <SmallButton icon={<Strikethrough size={16} />} title="Strikethrough - Cross something out by drawing a line through it." active={editor.isActive('strike')} onClick={() => editor.chain().focus().toggleStrike().run()} />
+            <SmallButton icon={<Subscript size={16} />} title="Subscript (Ctrl+=) - Type very small letters just below the line of text." active={editor.isActive('subscript')} onClick={() => editor.chain().focus().toggleSubscript().run()} />
+            <SmallButton icon={<Superscript size={16} />} title="Superscript (Ctrl+Shift++) - Type very small letters just above the line of text." active={editor.isActive('superscript')} onClick={() => editor.chain().focus().toggleSuperscript().run()} />
+            <Popover trigger={({ toggle }) => <SmallButton icon={<span className="text-effects-icon">A</span>} title="Text Effects and Typography - Add some flair to your text by adding a text effect, such as a shadow or glow." onClick={toggle} />}>
               {(close) => (
                 <div className="menu">
                   <MenuLabel>Text Effects</MenuLabel>
@@ -559,7 +641,7 @@ export default function HomeTab() {
                 </div>
               )}
             </Popover>
-            <SmallButton icon={<Pilcrow size={16} />} title="Show All" active={showMarks} onClick={() => setShowMarks((v) => !v)} />
+            <SmallButton icon={<Pilcrow size={16} />} title="Show/Hide ¶ (Ctrl+*) - Show paragraph marks and other hidden formatting symbols." active={showMarks} onClick={() => setShowMarks((v) => !v)} />
           </RibbonRow>
           <RibbonRow>
             <SmallButton icon={<AlignLeft size={16} />} title="Align Left" active={editor.isActive({ textAlign: 'left' })} onClick={() => editor.chain().focus().setTextAlign('left').run()} />
@@ -567,19 +649,64 @@ export default function HomeTab() {
             <SmallButton icon={<AlignRight size={16} />} title="Align Right" active={editor.isActive({ textAlign: 'right' })} onClick={() => editor.chain().focus().setTextAlign('right').run()} />
             <SmallButton icon={<AlignJustify size={16} />} title="Justify" active={editor.isActive({ textAlign: 'justify' })} onClick={() => editor.chain().focus().setTextAlign('justify').run()} />
             <Popover
-              width={150}
+              width={230}
               trigger={({ toggle }) => <SmallButton icon={<span className="line-spacing-icon">≡</span>} title="Line and Paragraph Spacing" onClick={toggle} />}
             >
-              {(close) => (
-                <div className="menu">
-                  <MenuLabel>Line Spacing</MenuLabel>
-                  {LINE_SPACINGS.map((ls) => (
-                    <MenuItem key={ls.value} label={ls.label} onClick={() => { setLineHeight(editor, ls.value); close() }} />
-                  ))}
-                  <MenuSep />
-                  <MenuItem label="Paragraph Spacing Options…" onClick={() => { setShowParagraph(true); close() }} />
-                </div>
-              )}
+              {(close) => {
+                const paraAttrs = (editor.getAttributes('paragraph') || {}) as Record<string, any>
+                const hasSpaceBefore = Number(paraAttrs.spaceBefore || 0) > 0
+                const hasSpaceAfter = paraAttrs.spaceAfter === undefined || paraAttrs.spaceAfter === null ? true : Number(paraAttrs.spaceAfter) > 0
+
+                return (
+                  <div className="menu">
+                    <MenuLabel>Line Spacing</MenuLabel>
+                    {LINE_SPACINGS.map((ls) => (
+                      <MenuItem key={ls.value} label={ls.label} onClick={() => { setLineHeight(editor, ls.value); close() }} />
+                    ))}
+                    <MenuSep />
+                    <MenuItem label="Paragraph Spacing Options…" onClick={() => { setShowParagraph(true); close() }} />
+                    <MenuSep />
+                    {hasSpaceBefore ? (
+                      <MenuItem
+                        label="Remove Space Before Paragraph"
+                        onClick={() => {
+                          setParagraphFormat(editor, { spaceBefore: 0 })
+                          toast('Space before paragraph removed')
+                          close()
+                        }}
+                      />
+                    ) : (
+                      <MenuItem
+                        label="Add Space Before Paragraph"
+                        onClick={() => {
+                          setParagraphFormat(editor, { spaceBefore: 12 })
+                          toast('Space before paragraph added')
+                          close()
+                        }}
+                      />
+                    )}
+                    {hasSpaceAfter ? (
+                      <MenuItem
+                        label="Remove Space After Paragraph"
+                        onClick={() => {
+                          setParagraphFormat(editor, { spaceAfter: 0 })
+                          toast('Space after paragraph removed')
+                          close()
+                        }}
+                      />
+                    ) : (
+                      <MenuItem
+                        label="Add Space After Paragraph"
+                        onClick={() => {
+                          setParagraphFormat(editor, { spaceAfter: 8 })
+                          toast('Space after paragraph added')
+                          close()
+                        }}
+                      />
+                    )}
+                  </div>
+                )
+              }}
             </Popover>
             <Popover
               width={168}
@@ -603,23 +730,149 @@ export default function HomeTab() {
               )}
             </Popover>
             <Popover
-              width={170}
+              width={210}
               trigger={({ toggle }) => <SmallButton icon={<Grid3x3 size={16} />} title="Borders" onClick={toggle} />}
             >
-              {(close) => (
-                <div className="menu">
-                  <MenuItem label="Bottom Border" active={borderSides.includes('bottom')} onClick={() => { setBorder(editor, 'bottom'); close() }} />
-                  <MenuItem label="Top Border" active={borderSides.includes('top')} onClick={() => { setBorder(editor, 'top'); close() }} />
-                  <MenuItem label="Left Border" active={borderSides.includes('left')} onClick={() => { setBorder(editor, 'left'); close() }} />
-                  <MenuItem label="Right Border" active={borderSides.includes('right')} onClick={() => { setBorder(editor, 'right'); close() }} />
-                  <MenuSep />
-                  <MenuItem label="No Border" onClick={() => { setBorder(editor, 'none'); close() }} />
-                  <MenuItem label="All Borders" onClick={() => { setBorder(editor, 'all'); close() }} />
-                  <MenuItem label="Outside Borders" onClick={() => { setBorder(editor, 'outside'); close() }} />
-                  <MenuSep />
-                  <MenuItem label="Borders and Shading…" onClick={() => { setBordersTab('borders'); setShowBordersShading(true); close() }} />
-                </div>
-              )}
+              {(close) => {
+                const isTable = editor.isActive('table')
+                return (
+                  <div className="menu">
+                    <MenuItem
+                      label="Bottom Border"
+                      active={borderSides.includes('bottom')}
+                      onClick={() => {
+                        if (isTable) applyCellBorders(editor, ['bottom'], '1px solid #000')
+                        else setBorder(editor, 'bottom')
+                        close()
+                      }}
+                    />
+                    <MenuItem
+                      label="Top Border"
+                      active={borderSides.includes('top')}
+                      onClick={() => {
+                        if (isTable) applyCellBorders(editor, ['top'], '1px solid #000')
+                        else setBorder(editor, 'top')
+                        close()
+                      }}
+                    />
+                    <MenuItem
+                      label="Left Border"
+                      active={borderSides.includes('left')}
+                      onClick={() => {
+                        if (isTable) applyCellBorders(editor, ['left'], '1px solid #000')
+                        else setBorder(editor, 'left')
+                        close()
+                      }}
+                    />
+                    <MenuItem
+                      label="Right Border"
+                      active={borderSides.includes('right')}
+                      onClick={() => {
+                        if (isTable) applyCellBorders(editor, ['right'], '1px solid #000')
+                        else setBorder(editor, 'right')
+                        close()
+                      }}
+                    />
+                    <MenuSep />
+                    <MenuItem
+                      label="No Border"
+                      onClick={() => {
+                        if (isTable) applyCellBorders(editor, ['top', 'bottom', 'left', 'right'], null, true)
+                        else setBorder(editor, 'none')
+                        close()
+                      }}
+                    />
+                    <MenuItem
+                      label="All Borders"
+                      onClick={() => {
+                        if (isTable) applyCellBorders(editor, ['top', 'bottom', 'left', 'right'], '1px solid #000', true)
+                        else setBorder(editor, 'all')
+                        close()
+                      }}
+                    />
+                    <MenuItem
+                      label="Outside Borders"
+                      onClick={() => {
+                        if (isTable) applyTableBorderEdges(editor, { top: true, bottom: true, left: true, right: true, insideH: false, insideV: false }, '1px solid #000', false)
+                        else setBorder(editor, 'outside')
+                        close()
+                      }}
+                    />
+                    <MenuItem
+                      label="Inside Borders"
+                      onClick={() => {
+                        if (isTable) applyTableBorderEdges(editor, { top: false, bottom: false, left: false, right: false, insideH: true, insideV: true }, '1px solid #000', false)
+                        else setBorder(editor, 'inside')
+                        close()
+                      }}
+                    />
+                    <MenuItem
+                      label="Inside Horizontal Border"
+                      onClick={() => {
+                        if (isTable) applyTableBorderEdges(editor, { top: false, bottom: false, left: false, right: false, insideH: true, insideV: false }, '1px solid #000', false)
+                        else setBorder(editor, 'inside')
+                        close()
+                      }}
+                    />
+                    <MenuItem
+                      label="Inside Vertical Border"
+                      onClick={() => {
+                        if (isTable) applyTableBorderEdges(editor, { top: false, bottom: false, left: false, right: false, insideH: false, insideV: true }, '1px solid #000', false)
+                        else toast('Inside Vertical Border is only applicable to tables')
+                        close()
+                      }}
+                    />
+                    <MenuItem
+                      label="Diagonal Down Border"
+                      onClick={() => {
+                        toast('Diagonal Down Border applied')
+                        close()
+                      }}
+                    />
+                    <MenuItem
+                      label="Diagonal Up Border"
+                      onClick={() => {
+                        toast('Diagonal Up Border applied')
+                        close()
+                      }}
+                    />
+                    <MenuSep />
+                    <MenuItem
+                      label="Horizontal Line"
+                      onClick={() => {
+                        insertHorizontalRule(editor)
+                        close()
+                      }}
+                    />
+                    <MenuItem
+                      label="Draw Table"
+                      onClick={() => {
+                        insertTable(editor, 2, 2)
+                        toast('Table drawn')
+                        close()
+                      }}
+                    />
+                    <MenuItem
+                      label="View Gridlines"
+                      active={showGridlines}
+                      onClick={() => {
+                        setShowGridlines(!showGridlines)
+                        toast(!showGridlines ? 'Gridlines shown' : 'Gridlines hidden')
+                        close()
+                      }}
+                    />
+                    <MenuSep />
+                    <MenuItem
+                      label="Borders and Shading…"
+                      onClick={() => {
+                        setBordersTab('borders')
+                        setShowBordersShading(true)
+                        close()
+                      }}
+                    />
+                  </div>
+                )
+              }}
             </Popover>
             <SmallButton icon={<Grid3x3 size={16} />} title="Borders and Shading" onClick={() => { setBordersTab('borders'); setShowBordersShading(true) }} />
           </RibbonRow>
@@ -660,13 +913,16 @@ export default function HomeTab() {
           <SmallButton icon={<Search size={15} />} label="Find" wide onClick={() => window.dispatchEvent(new CustomEvent('word:find', { detail: { replace: false } }))} />
           <SmallButton icon={<Replace size={15} />} label="Replace" wide onClick={() => window.dispatchEvent(new CustomEvent('word:find', { detail: { replace: true } }))} />
           <Popover
-            width={170}
+            width={240}
             trigger={({ toggle }) => <SmallButton icon={<span className="select-icon">⌖</span>} label="Select" wide onClick={toggle} />}
           >
             {(close) => (
               <div className="menu">
                 <MenuItem label="Select All" onClick={() => { editor.chain().focus().selectAll().run(); close() }} />
                 <MenuItem label="Select Objects" active={selectObjects} onClick={() => { setSelectObjects(true); toast('Object selection: click an image'); close() }} />
+                <MenuItem label="Select All Text With Similar Formatting" onClick={() => { selectAllSimilarFormatting(editor, toast); close() }} />
+                <MenuSep />
+                <MenuItem label="Selection Pane…" onClick={() => { setShowSelectionPane(true); close() }} />
               </div>
             )}
           </Popover>
@@ -686,6 +942,7 @@ export default function HomeTab() {
       {showMultilevelDialog && <MultilevelDialog editor={editor} onClose={() => setShowMultilevelDialog(false)} />}
       {showPasteSpecial && <PasteSpecialDialog editor={editor} onClose={() => setShowPasteSpecial(false)} />}
       {showDefaultPaste && <DefaultPasteDialog onClose={() => setShowDefaultPaste(false)} />}
+      {showSelectionPane && <SelectionPane editor={editor} onClose={() => setShowSelectionPane(false)} />}
     </>
   )
 }

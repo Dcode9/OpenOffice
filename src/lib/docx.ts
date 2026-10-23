@@ -237,7 +237,18 @@ export async function exportDocx(json: any, title = 'Document1'): Promise<Blob> 
 
 export async function importDocx(file: File): Promise<{ html: string; messages: string[] }> {
   const arrayBuffer = await file.arrayBuffer()
-  const result = await mammoth.convertToHtml({ arrayBuffer })
+  const options = {
+    styleMap: [
+      "p[style-name='Title'] => p.sample-title:fresh",
+      "p[style-name='Subtitle'] => p.sample-sub:fresh",
+      "p[style-name='Heading 1'] => h1:fresh",
+      "p[style-name='Heading 2'] => h2:fresh",
+      "p[style-name='Heading 3'] => h3:fresh",
+      "p[style-name='Quote'] => blockquote:fresh",
+      "p[style-name='Intense Quote'] => blockquote.intense-quote:fresh",
+    ],
+  }
+  const result = await mammoth.convertToHtml({ arrayBuffer }, options)
   return {
     html: result.value || '<p></p>',
     messages: result.messages.map((m) => m.message),

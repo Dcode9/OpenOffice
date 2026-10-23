@@ -1068,6 +1068,17 @@ button {
   outline: 1px solid #2b579a;
   outline-offset: 8px;
 }
+.page-wrap.compact {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.top-margin-whitespace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
 .page-wrap.gridlines .doc-body {
   background-image: linear-gradient(#e8eef7 1px, transparent 1px), linear-gradient(90deg, #e8eef7 1px, transparent 1px);
   background-size: 24px 24px;
@@ -2010,6 +2021,55 @@ button {
   border-radius: 2px;
   font-size: 10.5px;
   padding: 0 3px;
+}
+.table-spinners {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.table-spinner-btn {
+  background: #2a2a2a;
+  color: #aaa;
+  border: 1px solid #4a4a4a;
+  border-radius: 2px;
+  width: 12px;
+  height: 9px;
+  font-size: 6px;
+  line-height: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+.table-spinner-btn:hover {
+  background: #3e3e3e;
+  color: #fff;
+}
+.table-distribute-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
+.ProseMirror td[data-cell-border-diagonal="down"],
+.ProseMirror th[data-cell-border-diagonal="down"] {
+  background-image: linear-gradient(to bottom right, transparent calc(50% - 0.75px), currentColor 50%, transparent calc(50% + 0.75px)) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.ProseMirror td[data-cell-border-diagonal="up"],
+.ProseMirror th[data-cell-border-diagonal="up"] {
+  background-image: linear-gradient(to top right, transparent calc(50% - 0.75px), currentColor 50%, transparent calc(50% + 0.75px)) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.ProseMirror td[data-cell-border-diagonal="both"],
+.ProseMirror th[data-cell-border-diagonal="both"] {
+  background-image: linear-gradient(to bottom right, transparent calc(50% - 0.75px), currentColor 50%, transparent calc(50% + 0.75px)),
+                    linear-gradient(to top right, transparent calc(50% - 0.75px), currentColor 50%, transparent calc(50% + 0.75px)) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .table-align-extra {
   display: flex;

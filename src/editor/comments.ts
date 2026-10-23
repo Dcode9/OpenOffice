@@ -175,11 +175,15 @@ export function getThread(id: string | null | undefined) {
   return state.threads.find((thread) => thread.id === id) ?? null
 }
 
+let activeCommentId: string | null = null
+
 export function getActiveThreadId() {
   return activeCommentId
 }
 
-let activeCommentId: string | null = null
+export function getActiveCommentId() {
+  return activeCommentId
+}
 
 export function setActiveComment(id: string | null) {
   activeCommentId = id

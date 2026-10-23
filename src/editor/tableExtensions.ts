@@ -151,6 +151,16 @@ const CELL_ATTRS = {
           }
         : {},
   },
+  cellBorderDiagonal: {
+    default: null,
+    parseHTML: (element: HTMLElement) => element.getAttribute('data-cell-border-diagonal') || null,
+    renderHTML: (attributes: Record<string, unknown>) =>
+      attributes.cellBorderDiagonal
+        ? {
+            'data-cell-border-diagonal': attributes.cellBorderDiagonal,
+          }
+        : {},
+  },
   cellVerticalAlign: {
     default: null,
     parseHTML: (element: HTMLElement) => element.getAttribute('data-cell-vertical-align') || null,
