@@ -1,0 +1,2795 @@
+{
+  "Home": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Paste",
+      "text": "Paste",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        10,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 1,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Cut",
+      "text": "Cut",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        61,
+        73,
+        107,
+        22
+      ]
+    },
+    {
+      "i": 2,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Copy",
+      "text": "Copy",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        61,
+        96,
+        107,
+        22
+      ]
+    },
+    {
+      "i": 3,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Format Painter",
+      "text": "Format Painter",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        61,
+        119,
+        107,
+        22
+      ]
+    },
+    {
+      "i": 4,
+      "tag": "BUTTON",
+      "cls": "combo",
+      "type": "button",
+      "title": "Font",
+      "text": "Calibri",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        181,
+        73,
+        108,
+        24
+      ]
+    },
+    {
+      "i": 5,
+      "tag": "BUTTON",
+      "cls": "combo size-combo",
+      "type": "button",
+      "title": "Font Size",
+      "text": "11",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        291,
+        73,
+        56,
+        24
+      ]
+    },
+    {
+      "i": 6,
+      "tag": "BUTTON",
+      "cls": "rb-small",
+      "type": "button",
+      "title": "Grow Font",
+      "text": "A",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        349,
+        74,
+        24,
+        22
+      ]
+    },
+    {
+      "i": 7,
+      "tag": "BUTTON",
+      "cls": "rb-small",
+      "type": "button",
+      "title": "Shrink Font",
+      "text": "A",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        375,
+        74,
+        24,
+        22
+      ]
+    },
+    {
+      "i": 8,
+      "tag": "BUTTON",
+      "cls": "rb-small",
+      "type": "button",
+      "title": "Bold (Ctrl+B)",
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        181,
+        98,
+        28,
+        22
+      ]
+    },
+    {
+      "i": 9,
+      "tag": "BUTTON",
+      "cls": "rb-small",
+      "type": "button",
+      "title": "Italic (Ctrl+I)",
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        211,
+        98,
+        28,
+        22
+      ]
+    },
+    {
+      "i": 10,
+      "tag": "BUTTON",
+      "cls": "rb-small",
+      "type": "button",
+      "title": "Underline (Ctrl+U)",
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        241,
+        98,
+        28,
+        22
+      ]
+    },
+    {
+      "i": 11,
+      "tag": "BUTTON",
+      "cls": "rb-small",
+      "type": "button",
+      "title": "Strikethrough",
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        271,
+        98,
+        28,
+        22
+      ]
+    },
+    {
+      "i": 12,
+      "tag": "BUTTON",
+      "cls": "rb-small",
+      "type": "button",
+      "title": "Subscript",
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        301,
+        98,
+        28,
+        22
+      ]
+    },
+    {
+      "i": 13,
+      "tag": "BUTTON",
+      "cls": "rb-small",
+      "type": "button",
+      "title": "Superscript",
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        331,
+        98,
+        28,
+        22
+      ]
+    },
+    {
+      "i": 14,
+      "tag": "BUTTON",
+      "cls": "rb-small color-btn",
+      "type": "button",
+      "title": "Font Color",
+      "text": "A",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        361,
+        98,
+        26,
+        22
+      ]
+    },
+    {
+      "i": 15,
+      "tag": "BUTTON",
+      "cls": "rb-small color-btn",
+      "type": "button",
+      "title": "Text Highlight Color",
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        389,
+        98,
+        26,
+        22
+      ]
+    },
+    {
+      "i": 16,
+      "tag": "BUTTON",
+      "cls": "rb-small",
+      "type": "button",
+      "title": "Change Case",
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        417,
+        98,
+        28,
+        22
+      ]
+    },
+    {
+      "i": 17,
+      "tag": "BUTTON",
+      "cls": "rb-small",
+      "type": "button",
+      "title": "Clear All Formatting",
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        447,
+        98,
+        28,
+        22
+      ]
+    },
+    {
+      "i": 18,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Bullets",
+      "text": "Bullets",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        488,
+        73,
+        104,
+        22
+      ]
+    },
+    {
+      "i": 19,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Numbering",
+      "text": "Numbering",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        488,
+        96,
+        104,
+        22
+      ]
+    },
+    {
+      "i": 20,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Multilevel List",
+      "text": "Multilevel List",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        488,
+        119,
+        104,
+        22
+      ]
+    },
+    {
+      "i": 21,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Decrease Indent",
+      "text": "Decrease Indent",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        595,
+        73,
+        116,
+        22
+      ]
+    },
+    {
+      "i": 22,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Increase Indent",
+      "text": "Increase Indent",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        595,
+        96,
+        116,
+        22
+      ]
+    },
+    {
+      "i": 23,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Line Spacing",
+      "text": "≡ Line Spacing",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        595,
+        119,
+        116,
+        22
+      ]
+    },
+    {
+      "i": 24,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Align Left",
+      "text": "Align Left",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        714,
+        73,
+        82,
+        22
+      ]
+    },
+    {
+      "i": 25,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Center",
+      "text": "Center",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        714,
+        96,
+        82,
+        22
+      ]
+    },
+    {
+      "i": 26,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Align Right",
+      "text": "Align Right",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        799,
+        73,
+        90,
+        22
+      ]
+    },
+    {
+      "i": 27,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Justify",
+      "text": "Justify",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        799,
+        96,
+        90,
+        22
+      ]
+    },
+    {
+      "i": 28,
+      "tag": "BUTTON",
+      "cls": "style-card active",
+      "type": "button",
+      "title": "Normal",
+      "text": "AaBbCc Normal",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        906,
+        77,
+        70,
+        56
+      ]
+    },
+    {
+      "i": 29,
+      "tag": "BUTTON",
+      "cls": "style-card active",
+      "type": "button",
+      "title": "No Spacing",
+      "text": "AaBbCc No Spacing",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        978,
+        77,
+        70,
+        56
+      ]
+    },
+    {
+      "i": 30,
+      "tag": "BUTTON",
+      "cls": "style-card",
+      "type": "button",
+      "title": "Heading 1",
+      "text": "AaBbCc Heading 1",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1050,
+        77,
+        70,
+        56
+      ]
+    },
+    {
+      "i": 31,
+      "tag": "BUTTON",
+      "cls": "style-card",
+      "type": "button",
+      "title": "Heading 2",
+      "text": "AaBbCc Heading 2",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1122,
+        77,
+        70,
+        56
+      ]
+    },
+    {
+      "i": 32,
+      "tag": "BUTTON",
+      "cls": "style-card",
+      "type": "button",
+      "title": "Heading 3",
+      "text": "AaBbCc Heading 3",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1194,
+        77,
+        70,
+        56
+      ]
+    },
+    {
+      "i": 33,
+      "tag": "BUTTON",
+      "cls": "style-card",
+      "type": "button",
+      "title": "Heading 4",
+      "text": "AaBbCc Heading 4",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1266,
+        77,
+        70,
+        56
+      ]
+    },
+    {
+      "i": 34,
+      "tag": "BUTTON",
+      "cls": "style-card",
+      "type": "button",
+      "title": "Title",
+      "text": "AaBbCc Title",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1338,
+        77,
+        70,
+        56
+      ]
+    },
+    {
+      "i": 35,
+      "tag": "BUTTON",
+      "cls": "style-card",
+      "type": "button",
+      "title": "Subtitle",
+      "text": "AaBbCc Subtitle",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1410,
+        77,
+        70,
+        56
+      ]
+    },
+    {
+      "i": 36,
+      "tag": "BUTTON",
+      "cls": "style-card",
+      "type": "button",
+      "title": "Quote",
+      "text": "AaBbCc Quote",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1482,
+        77,
+        70,
+        56
+      ]
+    },
+    {
+      "i": 37,
+      "tag": "BUTTON",
+      "cls": "style-card",
+      "type": "button",
+      "title": "Intense Quote",
+      "text": "AaBbCc Intense Quote",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1554,
+        77,
+        70,
+        56
+      ]
+    },
+    {
+      "i": 38,
+      "tag": "BUTTON",
+      "cls": "style-more",
+      "type": "button",
+      "title": "More styles",
+      "text": "▾",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1626,
+        95,
+        20,
+        20
+      ]
+    },
+    {
+      "i": 39,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Find",
+      "text": "Find",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1175,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 40,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Replace",
+      "text": "Replace",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1226,
+        73,
+        58,
+        22
+      ]
+    },
+    {
+      "i": 41,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Select All",
+      "text": "Select All",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1226,
+        96,
+        58,
+        22
+      ]
+    }
+  ],
+  "Insert": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Cover Page",
+      "text": "Cover Page",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        10,
+        73,
+        65,
+        66
+      ]
+    },
+    {
+      "i": 1,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Blank Page",
+      "text": "Blank Page",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        78,
+        73,
+        63,
+        66
+      ]
+    },
+    {
+      "i": 2,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Page Break",
+      "text": "Page Break",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        144,
+        73,
+        64,
+        66
+      ]
+    },
+    {
+      "i": 3,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Table",
+      "text": "Table",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        220,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 4,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Pictures",
+      "text": "Pictures",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        281,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 5,
+      "tag": "INPUT",
+      "cls": "hidden-input",
+      "type": "file",
+      "title": null,
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": false,
+      "rect": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "i": 6,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Shapes",
+      "text": "Shapes",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        332,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 7,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "WordArt",
+      "text": "WordArt",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        383,
+        73,
+        51,
+        66
+      ]
+    },
+    {
+      "i": 8,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Link",
+      "text": "Link",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        448,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 9,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Bookmark",
+      "text": "Bookmark",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        499,
+        73,
+        92,
+        22
+      ]
+    },
+    {
+      "i": 10,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Cross-reference",
+      "text": "Cross-reference",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        499,
+        96,
+        92,
+        22
+      ]
+    },
+    {
+      "i": 11,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Header",
+      "text": "Header",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        603,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 12,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Footer",
+      "text": "Footer",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        654,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 13,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Page Number",
+      "text": "Page Number",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        705,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 14,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Text Box",
+      "text": "Text Box",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        792,
+        73,
+        50,
+        66
+      ]
+    },
+    {
+      "i": 15,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Date & Time",
+      "text": "Date & Time",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        845,
+        73,
+        110,
+        22
+      ]
+    },
+    {
+      "i": 16,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Horizontal Line",
+      "text": "Horizontal Line",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        845,
+        96,
+        110,
+        22
+      ]
+    },
+    {
+      "i": 17,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Symbol",
+      "text": "Symbol",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        958,
+        73,
+        78,
+        22
+      ]
+    },
+    {
+      "i": 18,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Equation",
+      "text": "Equation",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        958,
+        96,
+        78,
+        22
+      ]
+    },
+    {
+      "i": 19,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Comment",
+      "text": "Comment",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1049,
+        73,
+        58,
+        66
+      ]
+    },
+    {
+      "i": 20,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Table of Contents",
+      "text": "Table of Contents",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        1120,
+        73,
+        74,
+        66
+      ]
+    }
+  ],
+  "Draw": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Draw",
+      "text": "Draw",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        10,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 1,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Highlighter",
+      "text": "Highlighter",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        61,
+        73,
+        65,
+        66
+      ]
+    },
+    {
+      "i": 2,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Eraser",
+      "text": "Eraser",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        129,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 3,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Pen",
+      "text": "Pen",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        190,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 4,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Pencil",
+      "text": "Pencil",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        241,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 5,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Highlighter",
+      "text": "Highlighter",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        292,
+        73,
+        65,
+        66
+      ]
+    },
+    {
+      "i": 6,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Ink to Shape",
+      "text": "Ink to Shape",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        369,
+        73,
+        71,
+        66
+      ]
+    },
+    {
+      "i": 7,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Ink to Math",
+      "text": "Ink to Math",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        443,
+        73,
+        71,
+        22
+      ]
+    },
+    {
+      "i": 8,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Ink to Text",
+      "text": "Ink to Text",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        443,
+        96,
+        71,
+        22
+      ]
+    }
+  ],
+  "Design": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": null,
+      "text": "Themes",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        10,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 1,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": null,
+      "text": "Style Set",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        125,
+        73,
+        51,
+        66
+      ]
+    },
+    {
+      "i": 2,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Watermark",
+      "text": "Watermark",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        241,
+        73,
+        63,
+        66
+      ]
+    },
+    {
+      "i": 3,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Page Color",
+      "text": "Page Color",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        307,
+        73,
+        63,
+        66
+      ]
+    },
+    {
+      "i": 4,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Page Borders",
+      "text": "Page Borders",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        373,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 5,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Effects",
+      "text": "Effects",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        460,
+        73,
+        48,
+        66
+      ]
+    }
+  ],
+  "Layout": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Margins",
+      "text": "Margins",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        10,
+        73,
+        49,
+        66
+      ]
+    },
+    {
+      "i": 1,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Orientation",
+      "text": "Orientation",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        72,
+        73,
+        65,
+        66
+      ]
+    },
+    {
+      "i": 2,
+      "tag": "BUTTON",
+      "cls": "rb-small active wide",
+      "type": "button",
+      "title": "Portrait",
+      "text": "Portrait",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        141,
+        73,
+        65,
+        22
+      ]
+    },
+    {
+      "i": 3,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Landscape",
+      "text": "Landscape",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        141,
+        96,
+        65,
+        22
+      ]
+    },
+    {
+      "i": 4,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Size",
+      "text": "Size",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        219,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 5,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Columns",
+      "text": "Columns",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        280,
+        73,
+        53,
+        66
+      ]
+    },
+    {
+      "i": 6,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Breaks",
+      "text": "Breaks",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        345,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 7,
+      "tag": "INPUT",
+      "cls": "num-input",
+      "type": "number",
+      "title": null,
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        430,
+        73,
+        52,
+        22
+      ]
+    },
+    {
+      "i": 8,
+      "tag": "INPUT",
+      "cls": "num-input",
+      "type": "number",
+      "title": null,
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        516,
+        73,
+        52,
+        22
+      ]
+    },
+    {
+      "i": 9,
+      "tag": "INPUT",
+      "cls": "num-input",
+      "type": "number",
+      "title": null,
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        619,
+        73,
+        52,
+        22
+      ]
+    },
+    {
+      "i": 10,
+      "tag": "INPUT",
+      "cls": "num-input",
+      "type": "number",
+      "title": null,
+      "text": "",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        703,
+        73,
+        52,
+        22
+      ]
+    },
+    {
+      "i": 11,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Line Spacing",
+      "text": "Line Spacing",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        768,
+        73,
+        76,
+        22
+      ]
+    },
+    {
+      "i": 12,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Rotate",
+      "text": "Rotate",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        857,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 13,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Position",
+      "text": "Position",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        908,
+        73,
+        49,
+        66
+      ]
+    },
+    {
+      "i": 14,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Wrap Text",
+      "text": "Wrap Text",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        960,
+        73,
+        58,
+        66
+      ]
+    }
+  ],
+  "References": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Table of Contents",
+      "text": "Table of Contents",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        10,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 1,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Update Table",
+      "text": "Update Table",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        87,
+        73,
+        79,
+        22
+      ]
+    },
+    {
+      "i": 2,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Insert Footnote",
+      "text": "Insert Footnote",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        179,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 3,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Insert Endnote",
+      "text": "Insert Endnote",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        256,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 4,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Insert Citation",
+      "text": "Insert Citation",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        343,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 5,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Add Citation Source",
+      "text": "Add Citation Source",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        420,
+        73,
+        114,
+        22
+      ]
+    },
+    {
+      "i": 6,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Bibliography",
+      "text": "Bibliography",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        420,
+        96,
+        114,
+        22
+      ]
+    },
+    {
+      "i": 7,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Insert Caption",
+      "text": "Insert Caption",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        546,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 8,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Cross-reference",
+      "text": "Cross-reference",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        623,
+        73,
+        92,
+        22
+      ]
+    },
+    {
+      "i": 9,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Mark Entry",
+      "text": "Mark Entry",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        728,
+        73,
+        62,
+        66
+      ]
+    },
+    {
+      "i": 10,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Mark Citation",
+      "text": "Mark Citation",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        803,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 11,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Insert Table",
+      "text": "Insert Table",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        880,
+        73,
+        65,
+        66
+      ]
+    },
+    {
+      "i": 12,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Update Table",
+      "text": "Update Table",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        948,
+        73,
+        74,
+        66
+      ]
+    }
+  ],
+  "Mailings": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Envelopes",
+      "text": "Envelopes",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        10,
+        73,
+        59,
+        66
+      ]
+    },
+    {
+      "i": 1,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Labels",
+      "text": "Labels",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        72,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 2,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Start Mail Merge",
+      "text": "Start Mail Merge",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        133,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 3,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Select Recipients",
+      "text": "Select Recipients",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        210,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 4,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Edit Recipient List",
+      "text": "Edit Recipient List",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        287,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 5,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Insert Merge Field",
+      "text": "Insert Merge Field",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        374,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 6,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Rules",
+      "text": "Rules",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        451,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 7,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Preview Results",
+      "text": "Preview Results",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        512,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 8,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Find Recipient",
+      "text": "Find Recipient",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        589,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 9,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Finish & Merge",
+      "text": "Finish & Merge",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        676,
+        73,
+        74,
+        66
+      ]
+    }
+  ],
+  "Review": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Spelling & Grammar",
+      "text": "Spelling & Grammar",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        10,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 1,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Thesaurus",
+      "text": "Thesaurus",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        87,
+        73,
+        59,
+        66
+      ]
+    },
+    {
+      "i": 2,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Word Count",
+      "text": "Word Count",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        149,
+        73,
+        69,
+        66
+      ]
+    },
+    {
+      "i": 3,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "New Comment",
+      "text": "New Comment",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        231,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 4,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Delete",
+      "text": "Delete",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        308,
+        73,
+        66,
+        22
+      ]
+    },
+    {
+      "i": 5,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Previous",
+      "text": "Previous",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        308,
+        96,
+        66,
+        22
+      ]
+    },
+    {
+      "i": 6,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Next",
+      "text": "Next",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        308,
+        119,
+        66,
+        22
+      ]
+    },
+    {
+      "i": 7,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Track Changes",
+      "text": "Track Changes",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        387,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 8,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": null,
+      "text": "Accept",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        464,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 9,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Reject",
+      "text": "Reject",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        515,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 10,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Previous",
+      "text": "Previous",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        566,
+        73,
+        55,
+        22
+      ]
+    },
+    {
+      "i": 11,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Next",
+      "text": "Next",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        566,
+        96,
+        55,
+        22
+      ]
+    },
+    {
+      "i": 12,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Compare",
+      "text": "Compare",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        634,
+        73,
+        54,
+        66
+      ]
+    },
+    {
+      "i": 13,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Restrict Editing",
+      "text": "Restrict Editing",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        701,
+        73,
+        74,
+        66
+      ]
+    }
+  ],
+  "View": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Read Mode",
+      "text": "Read Mode",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        10,
+        73,
+        66,
+        66
+      ]
+    },
+    {
+      "i": 1,
+      "tag": "BUTTON",
+      "cls": "rb-big active",
+      "type": "button",
+      "title": "Print Layout",
+      "text": "Print Layout",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        79,
+        73,
+        68,
+        66
+      ]
+    },
+    {
+      "i": 2,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Web Layout",
+      "text": "Web Layout",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        150,
+        73,
+        68,
+        66
+      ]
+    },
+    {
+      "i": 3,
+      "tag": "BUTTON",
+      "cls": "rb-big active",
+      "type": "button",
+      "title": "Ruler",
+      "text": "Ruler",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        230,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 4,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Gridlines",
+      "text": "Gridlines",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        281,
+        73,
+        53,
+        66
+      ]
+    },
+    {
+      "i": 5,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Navigation Pane",
+      "text": "Navigation Pane",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        337,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 6,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Zoom",
+      "text": "Zoom",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        424,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 7,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "100%",
+      "text": "100%",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        475,
+        73,
+        71,
+        22
+      ]
+    },
+    {
+      "i": 8,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Page Width",
+      "text": "Page Width",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        475,
+        96,
+        71,
+        22
+      ]
+    },
+    {
+      "i": 9,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "One Page",
+      "text": "One Page",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        475,
+        119,
+        71,
+        22
+      ]
+    },
+    {
+      "i": 10,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Split",
+      "text": "Split",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        558,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 11,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Full Screen",
+      "text": "Full Screen",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        609,
+        73,
+        62,
+        66
+      ]
+    },
+    {
+      "i": 12,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "New Window",
+      "text": "New Window",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        675,
+        73,
+        101,
+        22
+      ]
+    },
+    {
+      "i": 13,
+      "tag": "BUTTON",
+      "cls": "rb-small wide",
+      "type": "button",
+      "title": "Switch Windows",
+      "text": "Switch Windows",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        675,
+        96,
+        101,
+        22
+      ]
+    },
+    {
+      "i": 14,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Macros",
+      "text": "Macros",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        789,
+        73,
+        48,
+        66
+      ]
+    }
+  ],
+  "Help": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Help",
+      "text": "Help",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        10,
+        73,
+        48,
+        66
+      ]
+    },
+    {
+      "i": 1,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Contact Support",
+      "text": "Contact Support",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        61,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 2,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Keyboard Shortcuts",
+      "text": "Keyboard Shortcuts",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        148,
+        73,
+        74,
+        66
+      ]
+    },
+    {
+      "i": 3,
+      "tag": "BUTTON",
+      "cls": "rb-big",
+      "type": "button",
+      "title": "Feedback",
+      "text": "Feedback",
+      "inPopover": false,
+      "disabled": false,
+      "visible": true,
+      "rect": [
+        235,
+        73,
+        56,
+        66
+      ]
+    }
+  ],
+  "File": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "cls": "back-btn",
+      "text": "Back"
+    },
+    {
+      "i": 1,
+      "tag": "BUTTON",
+      "cls": "bs-item active",
+      "text": "Home"
+    },
+    {
+      "i": 2,
+      "tag": "BUTTON",
+      "cls": "bs-item",
+      "text": "New"
+    },
+    {
+      "i": 3,
+      "tag": "BUTTON",
+      "cls": "bs-item",
+      "text": "Open"
+    },
+    {
+      "i": 4,
+      "tag": "BUTTON",
+      "cls": "bs-item",
+      "text": "Save"
+    },
+    {
+      "i": 5,
+      "tag": "BUTTON",
+      "cls": "bs-item",
+      "text": "Save As"
+    },
+    {
+      "i": 6,
+      "tag": "BUTTON",
+      "cls": "bs-item",
+      "text": "Print"
+    },
+    {
+      "i": 7,
+      "tag": "BUTTON",
+      "cls": "bs-item",
+      "text": "Share"
+    },
+    {
+      "i": 8,
+      "tag": "BUTTON",
+      "cls": "bs-item",
+      "text": "Export"
+    },
+    {
+      "i": 9,
+      "tag": "BUTTON",
+      "cls": "bs-item",
+      "text": "Close"
+    },
+    {
+      "i": 10,
+      "tag": "BUTTON",
+      "cls": "bs-card",
+      "text": "Blank document Start with a clean page"
+    },
+    {
+      "i": 11,
+      "tag": "BUTTON",
+      "cls": "bs-card",
+      "text": "Open Open a .docx from your PC"
+    },
+    {
+      "i": 12,
+      "tag": "BUTTON",
+      "cls": "bs-card",
+      "text": "Save Save “Document1” as .docx"
+    },
+    {
+      "i": 13,
+      "tag": "BUTTON",
+      "cls": "bs-card",
+      "text": "Print Print or export to PDF"
+    }
+  ],
+  "chrome": [
+    {
+      "i": 0,
+      "tag": "BUTTON",
+      "cls": "qat-btn",
+      "title": "Save (Ctrl+S)",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 1,
+      "tag": "BUTTON",
+      "cls": "qat-btn",
+      "title": "Undo (Ctrl+Z)",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 2,
+      "tag": "BUTTON",
+      "cls": "qat-btn",
+      "title": "Redo (Ctrl+Y)",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 3,
+      "tag": "INPUT",
+      "cls": "",
+      "title": null,
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 4,
+      "tag": "BUTTON",
+      "cls": "tb-icon",
+      "title": "Comments",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 5,
+      "tag": "BUTTON",
+      "cls": "tb-icon",
+      "title": "Help",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 6,
+      "tag": "BUTTON",
+      "cls": "",
+      "title": "Minimize",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 7,
+      "tag": "BUTTON",
+      "cls": "",
+      "title": "Maximize",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 8,
+      "tag": "BUTTON",
+      "cls": "close",
+      "title": "Close",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 9,
+      "tag": "BUTTON",
+      "cls": "ribbon-collapse",
+      "title": "Collapse the Ribbon",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 10,
+      "tag": "BUTTON",
+      "cls": "status-btn",
+      "title": "Page 1 of 1",
+      "type": null,
+      "text": "Page 1 of 1"
+    },
+    {
+      "i": 11,
+      "tag": "BUTTON",
+      "cls": "status-icon",
+      "title": "Navigation Pane",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 12,
+      "tag": "BUTTON",
+      "cls": "status-icon",
+      "title": "Read Mode",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 13,
+      "tag": "BUTTON",
+      "cls": "status-icon active",
+      "title": "Print Layout",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 14,
+      "tag": "BUTTON",
+      "cls": "status-icon",
+      "title": "Web Layout",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 15,
+      "tag": "BUTTON",
+      "cls": "status-icon",
+      "title": "Zoom out",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 16,
+      "tag": "INPUT",
+      "cls": "zoom-slider",
+      "title": null,
+      "type": "range",
+      "text": ""
+    },
+    {
+      "i": 17,
+      "tag": "BUTTON",
+      "cls": "status-icon",
+      "title": "Zoom in",
+      "type": null,
+      "text": ""
+    },
+    {
+      "i": 18,
+      "tag": "BUTTON",
+      "cls": "zoom-pct",
+      "title": "Reset zoom",
+      "type": null,
+      "text": "100%"
+    }
+  ]
+}

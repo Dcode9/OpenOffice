@@ -1,0 +1,1586 @@
+{
+  "Home": {
+    "width": 1536,
+    "groups": [
+      {
+        "label": "Clipboard",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Paste",
+            "title": "Paste",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Cut (Ctrl+X)",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Copy (Ctrl+C)",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Format Painter",
+            "cls": "rb-small",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Font",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "A",
+            "title": "Grow Font",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "A",
+            "title": "Shrink Font",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Change Case",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Clear Formatting",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Bold (Ctrl+B)",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Italic (Ctrl+I)",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Underline (Ctrl+U)",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Strikethrough",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Subscript",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Superscript",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "A",
+            "title": "Text Effects and Typography",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Text Highlight Color",
+            "cls": "rb-small color-btn",
+            "disabled": false
+          },
+          {
+            "text": "A",
+            "title": "Font Color",
+            "cls": "rb-small color-btn",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Paragraph",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "",
+            "title": "Bullets",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Numbering",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Multilevel List",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Decrease Indent",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Increase Indent",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Sort",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Show All",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "≡",
+            "title": "Line and Paragraph Spacing",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Shading",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Borders",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Align Left",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Center",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Align Right",
+            "cls": "rb-small",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Justify",
+            "cls": "rb-small",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Styles",
+        "className": "ribbon-group",
+        "controls": []
+      },
+      {
+        "label": "Editing",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Find",
+            "title": "Find",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Replace",
+            "title": "Replace",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "⌖Select",
+            "title": "Select",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Add-ins",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Add-ins",
+            "title": "Add-ins",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      }
+    ]
+  },
+  "Insert": {
+    "width": 1536,
+    "groups": [
+      {
+        "label": "Pages",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Cover Page",
+            "title": "Cover Page",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Blank Page",
+            "title": "Blank Page",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Page Break",
+            "title": "Page Break",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Tables",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Table",
+            "title": "Table",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Illustrations",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Pictures",
+            "title": "Pictures",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Shapes",
+            "title": "Shapes",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Icons",
+            "title": "Icons",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "3D Models",
+            "title": "3D Models",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "SmartArt",
+            "title": "SmartArt",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Chart",
+            "title": "Chart",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Screenshot",
+            "title": "Screenshot",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Add-ins",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Get Add-ins",
+            "title": "Get Add-ins",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "My Add-ins",
+            "title": "My Add-ins",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Media",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Online Videos…",
+            "title": "Online Videos…",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Links",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Link",
+            "title": "Link",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Bookmark",
+            "title": "Bookmark",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Cross-reference",
+            "title": "Cross-reference",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Comments",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Comment",
+            "title": "Comment",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Header & Footer",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Header",
+            "title": "Header",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Footer",
+            "title": "Footer",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Page Number",
+            "title": "Page Number",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Text",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Text Box",
+            "title": "Text Box",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Quick Parts",
+            "title": "Quick Parts",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "WordArt",
+            "title": "WordArt",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Drop Cap",
+            "title": "Drop Cap",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Signature Line",
+            "title": "Signature Line",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Date & Time",
+            "title": "Date & Time",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Object",
+            "title": "Object",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Symbols",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Equation",
+            "title": "Equation",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Symbol",
+            "title": "Symbol",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      }
+    ]
+  },
+  "Draw": {
+    "width": 1536,
+    "groups": [
+      {
+        "label": "Drawing Tools",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "",
+            "title": "Select",
+            "cls": "rb-big ink-btn active",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Lasso Select",
+            "cls": "rb-big ink-btn",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Eraser",
+            "cls": "rb-big ink-btn",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Pen: 0.35 mm",
+            "cls": "rb-big ink-btn",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Pen: 3.5 mm",
+            "cls": "rb-big ink-btn",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Highlighter: 6 mm. Snap to Text: Off",
+            "cls": "rb-big ink-btn",
+            "disabled": false
+          },
+          {
+            "text": "",
+            "title": "Pen: 0.5 mm",
+            "cls": "rb-big ink-btn",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Stencils",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Ruler",
+            "title": "Ruler",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Format Background",
+            "title": "Format Background",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Convert",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Ink to Shape",
+            "title": "Ink to Shape",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Ink to Math",
+            "title": "Ink to Math",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Insert",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Drawing Canvas",
+            "title": "Drawing Canvas",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Replay",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Ink Replay",
+            "title": "Ink Replay",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Help",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Ink Help",
+            "title": "Ink Help",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      }
+    ]
+  },
+  "Design": {
+    "width": 1536,
+    "groups": [
+      {
+        "label": "Document Formatting",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Themes",
+            "title": "Themes",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Colors",
+            "title": "Colors",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "AFonts",
+            "title": "Fonts",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Paragraph Spacing",
+            "title": "Paragraph Spacing",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Effects",
+            "title": "Effects",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Set as Default",
+            "title": "Set as Default",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Page Background",
+        "className": "ribbon-group design-bg",
+        "controls": [
+          {
+            "text": "Watermark",
+            "title": "Watermark",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Page Color",
+            "title": "Page Color",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Page Borders",
+            "title": "Page Borders",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      }
+    ]
+  },
+  "Layout": {
+    "width": 1536,
+    "groups": [
+      {
+        "label": "Page Setup",
+        "className": "ribbon-group page-setup",
+        "controls": [
+          {
+            "text": "Margins",
+            "title": "Margins",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Orientation",
+            "title": "Orientation",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Size",
+            "title": "Size",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Columns",
+            "title": "Columns",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Breaks",
+            "title": "Breaks",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Line Numbers",
+            "title": "Line Numbers",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Hyphenation",
+            "title": "Hyphenation",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Paragraph",
+        "className": "ribbon-group",
+        "controls": []
+      },
+      {
+        "label": "Arrange",
+        "className": "ribbon-group arrange-group",
+        "controls": [
+          {
+            "text": "Position",
+            "title": "Position",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Wrap Text",
+            "title": "Wrap Text",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Bring Forward",
+            "title": "Bring Forward",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Send Backward",
+            "title": "Send Backward",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Selection Pane",
+            "title": "Selection Pane",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Align",
+            "title": "Align",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Group",
+            "title": "Group",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Rotate",
+            "title": "Rotate",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      }
+    ]
+  },
+  "References": {
+    "width": 1536,
+    "groups": [
+      {
+        "label": "Table of Contents",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Table of Contents",
+            "title": "Table of Contents",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Add Text",
+            "title": "Add Text",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Update Table",
+            "title": "Update Table",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Footnotes",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Insert Footnote",
+            "title": "Insert Footnote",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Insert Endnote",
+            "title": "Insert Endnote",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Next Footnote",
+            "title": "Next Footnote",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Show Notes",
+            "title": "Show Notes",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Citations & Bibliography",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Insert Citation",
+            "title": "Insert Citation",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Bibliography",
+            "title": "Bibliography",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Manage Sources",
+            "title": "Manage Sources",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Captions",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Insert Caption…",
+            "title": "Insert Caption…",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Insert Table of Figures",
+            "title": "Insert Table of Figures",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Update Table",
+            "title": "Update Table",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Cross-reference",
+            "title": "Cross-reference",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Index",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Mark Entry",
+            "title": "Mark Entry",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Insert Index",
+            "title": "Insert Index",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Update Index",
+            "title": "Update Index",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Table of Authorities",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Mark Citation",
+            "title": "Mark Citation",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Insert Table of Authorities",
+            "title": "Insert Table of Authorities",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Update Table",
+            "title": "Update Table",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      }
+    ]
+  },
+  "Mailings": {
+    "width": 1536,
+    "groups": [
+      {
+        "label": "Create",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Envelopes",
+            "title": "Envelopes",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Labels",
+            "title": "Labels",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Start Mail Merge",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Start Mail Merge",
+            "title": "Start Mail Merge",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Select Recipients",
+            "title": "Select Recipients",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Edit Recipient List",
+            "title": "Edit Recipient List",
+            "cls": "rb-big",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "label": "Write & Insert Fields",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Address Block…",
+            "title": "Address Block…",
+            "cls": "rb-big",
+            "disabled": true
+          },
+          {
+            "text": "Greeting Line…",
+            "title": "Greeting Line…",
+            "cls": "rb-big",
+            "disabled": true
+          },
+          {
+            "text": "Insert Merge Field",
+            "title": "Insert Merge Field",
+            "cls": "rb-big",
+            "disabled": true
+          },
+          {
+            "text": "Rules",
+            "title": "Rules",
+            "cls": "rb-big",
+            "disabled": true
+          },
+          {
+            "text": "Highlight Merge Fields",
+            "title": "Highlight Merge Fields",
+            "cls": "rb-small active wide",
+            "disabled": false
+          },
+          {
+            "text": "Match Fields",
+            "title": "Match Fields",
+            "cls": "rb-small wide",
+            "disabled": true
+          },
+          {
+            "text": "Update Labels",
+            "title": "Update Labels",
+            "cls": "rb-small wide",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "label": "Preview Results",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Preview Results",
+            "title": "Preview Results",
+            "cls": "rb-big",
+            "disabled": true
+          },
+          {
+            "text": "",
+            "title": "First",
+            "cls": "rb-small",
+            "disabled": true
+          },
+          {
+            "text": "",
+            "title": "Previous",
+            "cls": "rb-small",
+            "disabled": true
+          },
+          {
+            "text": "",
+            "title": "Next",
+            "cls": "rb-small",
+            "disabled": true
+          },
+          {
+            "text": "",
+            "title": "Last",
+            "cls": "rb-small",
+            "disabled": true
+          },
+          {
+            "text": "Find Recipient…",
+            "title": "Find Recipient…",
+            "cls": "rb-small wide",
+            "disabled": true
+          },
+          {
+            "text": "Check for Errors…",
+            "title": "Check for Errors…",
+            "cls": "rb-small wide",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "label": "Finish",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Finish & Merge",
+            "title": "Finish & Merge",
+            "cls": "rb-big",
+            "disabled": true
+          }
+        ]
+      }
+    ]
+  },
+  "Review": {
+    "width": 1536,
+    "groups": [
+      {
+        "label": "Proofing",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Spelling & Grammar",
+            "title": "Spelling & Grammar",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Thesaurus",
+            "title": "Thesaurus",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Word Count",
+            "title": "Word Count",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Speech",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Read Aloud",
+            "title": "Read Aloud",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Accessibility",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Accessibility",
+            "title": "Accessibility",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Language",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Translate",
+            "title": "Translate",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Language",
+            "title": "Language",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Comments",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "New Comment",
+            "title": "New Comment",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Delete",
+            "title": "Delete",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Previous",
+            "title": "Previous",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Next",
+            "title": "Next",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Show Comments",
+            "title": "Show Comments",
+            "cls": "rb-small active wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Tracking",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Track Changes",
+            "title": "Track Changes",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Show Markup",
+            "title": "Show Markup",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Reviewing Pane",
+            "title": "Reviewing Pane",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Changes",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Accept",
+            "title": "Accept",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Reject",
+            "title": "Reject",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Previous",
+            "title": "Previous",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Next",
+            "title": "Next",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Compare",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Compare",
+            "title": "Compare",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Protect",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Block Authors",
+            "title": "Block Authors",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Restrict Editing",
+            "title": "Restrict Editing",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Ink",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Hide Ink",
+            "title": "Hide Ink",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      }
+    ]
+  },
+  "View": {
+    "width": 1536,
+    "groups": [
+      {
+        "label": "Views",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Read Mode",
+            "title": "Read Mode",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Print Layout",
+            "title": "Print Layout",
+            "cls": "rb-big active",
+            "disabled": false
+          },
+          {
+            "text": "Web Layout",
+            "title": "Web Layout",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Outline",
+            "title": "Outline",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Draft",
+            "title": "Draft",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Immersive",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Focus",
+            "title": "Focus",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Immersive Reader",
+            "title": "Immersive Reader",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Dark Mode",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Switch Modes",
+            "title": "Switch Modes",
+            "cls": "rb-big active",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Page Movement",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Vertical",
+            "title": "Vertical",
+            "cls": "rb-small active wide",
+            "disabled": false
+          },
+          {
+            "text": "Side to Side",
+            "title": "Side to Side",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Show",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Ruler",
+            "title": "Ruler",
+            "cls": "rb-small wide view-check-row active",
+            "disabled": false
+          },
+          {
+            "text": "View Gridlines",
+            "title": "View Gridlines",
+            "cls": "rb-small wide view-check-row",
+            "disabled": false
+          },
+          {
+            "text": "Navigation Pane",
+            "title": "Navigation Pane",
+            "cls": "rb-small wide view-check-row",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Zoom",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Zoom",
+            "title": "Zoom",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "100%",
+            "title": "100%",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "One Page",
+            "title": "One Page",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Multiple Pages",
+            "title": "Multiple Pages",
+            "cls": "rb-small wide",
+            "disabled": false
+          },
+          {
+            "text": "Page Width",
+            "title": "Page Width",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Window",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "New Window",
+            "title": "New Window",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Arrange All",
+            "title": "Arrange All",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Split",
+            "title": "Split",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "View Side by Side",
+            "title": "View Side by Side",
+            "cls": "rb-small wide",
+            "disabled": true
+          },
+          {
+            "text": "Synchronous Scrolling",
+            "title": "Synchronous Scrolling",
+            "cls": "rb-small wide",
+            "disabled": true
+          },
+          {
+            "text": "Reset Window Position",
+            "title": "Reset Window Position",
+            "cls": "rb-small wide",
+            "disabled": true
+          },
+          {
+            "text": "Switch Windows",
+            "title": "Switch Windows",
+            "cls": "rb-small wide",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Macros",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Macros",
+            "title": "Macros",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      }
+    ]
+  },
+  "Help": {
+    "width": 1536,
+    "groups": [
+      {
+        "label": "Help",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Help",
+            "title": "Help",
+            "cls": "rb-big",
+            "disabled": false
+          },
+          {
+            "text": "Contact Support",
+            "title": "Contact Support",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Show Training",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Keyboard Shortcuts",
+            "title": "Keyboard Shortcuts",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "label": "Feedback",
+        "className": "ribbon-group",
+        "controls": [
+          {
+            "text": "Feedback",
+            "title": "Feedback",
+            "cls": "rb-big",
+            "disabled": false
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "total": 79,
+  "passed": 79,
+  "failed": 0,
+  "errors": [],
+  "checks": [
+    {
+      "name": "Clipboard Copy button exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Office Clipboard pane opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Office Clipboard has copied item",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Clipboard Paste button exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Paste inserts clipboard content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Clipboard Cut button exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Cut removes selection",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Format Painter starts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Format Painter applies copied formatting",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Font family applies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Font size applies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Grow Font button",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Grow Font increments size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Shrink Font button",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Shrink Font decrements size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Change Case menu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "UPPERCASE applies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Clear Formatting button",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Clear Formatting removes font",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bold toggles on",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "italic toggles on",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "underline toggles on",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "strike toggles on",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "subscript toggles on",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "superscript toggles on",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Text Effects menu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Text effect applies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Text Effects menu reopens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Text Effects dialog opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Text Effects dialog visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Highlight color menu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Highlight applies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Font color menu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Font color applies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Font dialog launcher",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Font dialog visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Font dialog applies size",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Font dialog applies bold and italic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bullets button",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bullets toggle list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Numbering toggle list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Multilevel List button",
+      "pass": true
+    },
+    {
+      "name": "Multilevel List creates list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Increase Indent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Increase Indent sets indent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Decrease Indent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Decrease Indent resets indent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Sort menu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Sort ascending reorders paragraphs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Show All button",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Show All renders paragraph marks",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Align Left applies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Center applies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Align Right applies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Justify applies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Line spacing applies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Paragraph shading applies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Borders apply",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No Border clears borders",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Paragraph dialog launcher",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Paragraph dialog visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Paragraph dialog applies indent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Paragraph dialog applies spacing",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Style gallery Heading",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Style gallery applies heading",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "More styles applies Title formatting",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Create a Style adds custom style",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Styles launcher opens pane",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Styles pane visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Find button opens panel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Find panel visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Replace button opens panel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Replace row visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Select menu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Select All selects document",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Select Objects menu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Select Objects selects image",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Add-ins button handled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Add-ins reports web limitation",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

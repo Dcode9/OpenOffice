@@ -1,0 +1,934 @@
+/* ============================================================
+   Microsoft Word — Equation tools
+   ============================================================ */
+
+.equation-render {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: "Cambria Math", Cambria, "Times New Roman", serif;
+  font-size: 1.06em;
+  line-height: 1.35;
+  letter-spacing: 0;
+  font-variant-numeric: lining-nums;
+  color: #111;
+}
+
+.eq-var {
+  font-family: "Cambria Math", Cambria, "Times New Roman", serif;
+  font-style: italic;
+  padding: 0 0.02em;
+}
+
+/* ---------------- editable equation object ---------------- */
+
+.equation-node {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: baseline;
+  padding: 1px 4px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  outline: none;
+  cursor: text;
+  color: #000;
+  font-family: "Cambria Math", Cambria, "Times New Roman", serif;
+  font-size: 1.07em;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  transition: background 0.12s, border-color 0.12s;
+}
+
+.equation-node:hover {
+  border-color: rgba(24, 90, 189, 0.28);
+  background: rgba(24, 90, 189, 0.035);
+}
+
+.equation-node:focus {
+  border-color: var(--word-accent, #185abd);
+  background: rgba(24, 90, 189, 0.055);
+}
+
+.equation-node.selected,
+.equation-node.ProseMirror-selectednode {
+  outline: 2px solid var(--word-accent, #185abd);
+  outline-offset: 1px;
+}
+
+.equation-node[data-inline-mode="false"] {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px 8px;
+  text-align: center;
+}
+
+.equation-node[data-inline-mode="false"][data-justification="left"] {
+  text-align: left;
+}
+
+.equation-node[data-inline-mode="false"][data-justification="right"] {
+  text-align: right;
+}
+
+.equation-node[data-inline-mode="false"][data-justification="center"],
+.equation-node[data-inline-mode="false"][data-justification="group"] {
+  text-align: center;
+}
+
+.equation-node[data-display="linear"] {
+  font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
+  font-size: 0.95em;
+  white-space: pre-wrap;
+  letter-spacing: 0;
+}
+
+.equation-node:empty::before {
+  content: "Type equation here";
+  color: #8e9baa;
+  font-family: "Cambria Math", Cambria, serif;
+  font-size: 0.88em;
+  font-style: normal;
+}
+
+/* ---------------- placeholders ---------------- */
+
+.eq-slot {
+  display: inline-block;
+  min-width: 0.62em;
+  min-height: 1.05em;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+.eq-slot:empty {
+  border: 1px dashed rgba(120, 140, 160, 0.48);
+  background: rgba(120, 140, 160, 0.06);
+}
+
+.eq-slot:empty::before {
+  content: attr(data-ph);
+  display: inline-block;
+  min-width: 0.5em;
+  padding: 0 0.08em;
+  color: #8e9baa;
+  font-style: normal;
+  font-size: 0.88em;
+  text-align: center;
+}
+
+/* ---------------- fractions ---------------- */
+
+.eq-frac {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 0.14em;
+  line-height: 1.08;
+}
+
+.eq-frac .eq-num {
+  display: block;
+  padding: 0 0.28em 0.08em;
+  border-bottom: 1px solid currentColor;
+  min-width: 1.15em;
+  text-align: center;
+}
+
+.eq-frac .eq-den {
+  display: block;
+  padding: 0.08em 0.28em 0;
+  min-width: 1.15em;
+  text-align: center;
+}
+
+.eq-frac.eq-small {
+  font-size: 0.82em;
+}
+
+.eq-frac.eq-skew {
+  transform: skewX(-9deg);
+}
+
+.eq-frac-linear {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ---------------- scripts ---------------- */
+
+.eq-sup,
+.eq-sub {
+  display: inline-block;
+  font-size: 0.7em;
+  line-height: 1;
+  vertical-align: baseline;
+}
+
+.eq-sup {
+  position: relative;
+  top: -0.48em;
+}
+
+.eq-sub {
+  position: relative;
+  top: 0.24em;
+}
+
+.eq-script {
+  display: inline-flex;
+  align-items: flex-start;
+  vertical-align: middle;
+}
+
+.eq-script .eq-base {
+  align-self: center;
+}
+
+.eq-script .eq-sup {
+  top: -0.12em;
+  align-self: flex-start;
+}
+
+.eq-script .eq-sub {
+  top: 0.28em;
+  align-self: flex-end;
+}
+
+.eq-prescript {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  vertical-align: middle;
+  font-size: 0.7em;
+  line-height: 1;
+  margin-right: 0.06em;
+}
+
+/* ---------------- radicals ---------------- */
+
+.eq-rad {
+  display: inline-flex;
+  align-items: flex-start;
+  position: relative;
+  vertical-align: middle;
+  margin: 0 0.05em;
+}
+
+.eq-rad-sym {
+  font-family: "Cambria Math", Cambria, serif;
+  font-size: 1.28em;
+  line-height: 1;
+  transform: translateY(-0.03em);
+}
+
+.eq-radicand {
+  display: inline-block;
+  min-height: 1.1em;
+  padding: 0.05em 0.16em 0 0.1em;
+  margin-top: 0.09em;
+  border-top: 1px solid currentColor;
+}
+
+.eq-rad-deg {
+  position: absolute;
+  left: -0.04em;
+  top: -0.58em;
+  font-size: 0.62em;
+  line-height: 1;
+}
+
+.eq-rad-deg + .eq-rad-sym {
+  padding-left: 0.18em;
+}
+
+/* ---------------- integrals ---------------- */
+
+.eq-int {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  vertical-align: middle;
+  padding: 0 0.16em;
+}
+
+.eq-int-sym {
+  font-family: "Cambria Math", Cambria, serif;
+  font-size: 2.05em;
+  line-height: 1;
+}
+
+.eq-int-sup,
+.eq-int-sub {
+  position: absolute;
+  left: 0.68em;
+  font-size: 0.64em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.eq-int-sup {
+  top: -0.15em;
+}
+
+.eq-int-sub {
+  bottom: -0.12em;
+}
+
+.eq-int-body {
+  margin-left: 0.16em;
+}
+
+/* ---------------- large operators ---------------- */
+
+.eq-lop {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 0 0.12em;
+  line-height: 1;
+}
+
+.eq-lop-sym {
+  font-family: "Cambria Math", Cambria, serif;
+  font-size: 1.9em;
+  line-height: 0.95;
+}
+
+.eq-lop-sup,
+.eq-lop-sub {
+  font-size: 0.66em;
+  line-height: 1;
+  min-height: 0.7em;
+  white-space: nowrap;
+}
+
+/* ---------------- brackets / cases ---------------- */
+
+.eq-bracket {
+  display: inline-flex;
+  align-items: stretch;
+  vertical-align: middle;
+  margin: 0 0.05em;
+}
+
+.eq-bracket-open,
+.eq-bracket-close {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Cambria Math", Cambria, serif;
+  font-size: 1.55em;
+  line-height: 1;
+}
+
+.eq-bracket-body {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0.08em;
+}
+
+.eq-cases {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.eq-cases-brace {
+  font-family: "Cambria Math", Cambria, serif;
+  font-size: 2.9em;
+  line-height: 1;
+  margin-right: 0.12em;
+}
+
+.eq-cases-rows {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.16em;
+}
+
+.eq-case-row {
+  display: flex;
+  align-items: center;
+  gap: 0.55em;
+}
+
+/* ---------------- functions / limits ---------------- */
+
+.eq-func {
+  display: inline-flex;
+  align-items: baseline;
+  vertical-align: middle;
+  margin: 0 0.04em;
+}
+
+.eq-func-name {
+  font-style: normal;
+  padding-right: 0.1em;
+  white-space: nowrap;
+}
+
+.eq-lim {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  margin: 0 0.12em;
+  line-height: 1.05;
+}
+
+.eq-lim-name {
+  font-style: normal;
+  white-space: nowrap;
+}
+
+.eq-lim-sub {
+  font-size: 0.66em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* ---------------- accents ---------------- */
+
+.eq-accent {
+  display: inline-flex;
+  position: relative;
+  vertical-align: middle;
+  padding-top: 0.28em;
+}
+
+.eq-accent-base {
+  min-width: 0.7em;
+}
+
+.eq-accent::before {
+  position: absolute;
+  top: -0.08em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.95em;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.eq-accent[data-accent="hat"]::before {
+  content: "^";
+}
+
+.eq-accent[data-accent="check"]::before {
+  content: "ˇ";
+}
+
+.eq-accent[data-accent="tilde"]::before {
+  content: "~";
+}
+
+.eq-accent[data-accent="acute"]::before {
+  content: "´";
+}
+
+.eq-accent[data-accent="grave"]::before {
+  content: "`";
+}
+
+.eq-accent[data-accent="dot"]::before {
+  content: "·";
+}
+
+.eq-accent[data-accent="prime"]::before {
+  content: "′";
+}
+
+.eq-accent[data-accent="bar"]::before {
+  content: "‾";
+}
+
+/* ---------------- matrices ---------------- */
+
+.eq-matrix {
+  display: inline-flex;
+  align-items: stretch;
+  vertical-align: middle;
+  margin: 0 0.08em;
+}
+
+.eq-matrix-open,
+.eq-matrix-close {
+  display: flex;
+  align-items: center;
+  font-family: "Cambria Math", Cambria, serif;
+  font-size: 2.1em;
+  line-height: 1;
+}
+
+.eq-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--eq-cols, 2), minmax(1.05em, auto));
+  gap: 0.18em 0.6em;
+  padding: 0.12em 0.22em;
+  align-items: center;
+}
+
+.eq-matrix-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.1em;
+  text-align: center;
+}
+
+/* ---------------- ribbon: tools / conversions ---------------- */
+
+.eq-ribbon-glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cambria Math", Cambria, serif;
+  font-size: 21px;
+  line-height: 1;
+  color: inherit;
+}
+
+.eq-icon-frac {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.05;
+}
+
+.eq-icon-frac span:first-child {
+  border-bottom: 1px solid currentColor;
+  padding: 0 3px;
+}
+
+.eq-icon-script {
+  font-size: 17px;
+  font-style: italic;
+}
+
+.eq-icon-script sup {
+  font-size: 0.7em;
+}
+
+.eq-icon-radical {
+  font-size: 18px;
+}
+
+.eq-icon-integral,
+.eq-icon-largeop {
+  font-size: 24px;
+}
+
+.eq-icon-bracket,
+.eq-icon-function,
+.eq-icon-limit {
+  font-size: 17px;
+}
+
+.eq-icon-accent {
+  font-size: 20px;
+}
+
+.eq-icon-operator {
+  font-size: 21px;
+}
+
+.eq-icon-matrix {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* ---------------- ribbon: symbols palette ---------------- */
+
+.equation-symbols {
+  display: flex;
+  align-items: stretch;
+  height: 66px;
+}
+
+.equation-symbol-grid {
+  display: grid;
+  grid-template-columns: repeat(13, 24px);
+  grid-template-rows: repeat(2, 28px);
+  gap: 1px;
+  padding: 3px;
+  border: 1px solid #4a4a4a;
+  border-radius: 3px 0 0 3px;
+  background: #242424;
+}
+
+.equation-symbol-cell {
+  width: 24px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background: transparent;
+  color: #ededed;
+  font-family: "Cambria Math", Cambria, "Times New Roman", serif;
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.equation-symbol-cell:hover {
+  background: #1f4a7a;
+  border-color: var(--word-accent, #185abd);
+}
+
+.equation-symbol-more {
+  width: 22px;
+  border: 1px solid #4a4a4a;
+  border-left: none;
+  border-radius: 0 3px 3px 0;
+  background: #333333;
+  color: #b6b6b6;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.equation-symbol-more:hover {
+  background: #3d3d3d;
+}
+
+/* ---------------- ribbon: structures ---------------- */
+
+.equation-structures {
+  display: flex;
+  align-items: flex-start;
+  gap: 1px;
+}
+
+.equation-structures .rb-big {
+  min-width: 46px;
+  max-width: 58px;
+}
+
+.equation-structures .rb-big-label {
+  font-size: 9px;
+}
+
+.equation-structures .rb-big-icon {
+  height: 24px;
+}
+
+/* ---------------- equation gallery ---------------- */
+
+.equation-gallery {
+  padding: 6px;
+  max-height: 440px;
+  overflow: auto;
+}
+
+.equation-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.equation-gallery-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+  min-height: 82px;
+  padding: 7px 4px 5px;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  background: #2b2b2b;
+  color: #ededed;
+  cursor: pointer;
+}
+
+.equation-gallery-card:hover {
+  background: #3a3a3a;
+  border-color: var(--word-accent, #185abd);
+}
+
+.equation-gallery-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 38px;
+  overflow: hidden;
+  padding: 1px 2px;
+}
+
+.equation-gallery-preview .equation-render {
+  font-size: 15px;
+  line-height: 1.35;
+  color: #ededed;
+}
+
+.equation-gallery-label {
+  display: block;
+  width: 100%;
+  font-size: 10.5px;
+  line-height: 1.15;
+  text-align: center;
+  color: #cfcfcf;
+}
+
+.equation-gallery-card.new .equation-gallery-preview {
+  border: 1px dashed #5a5a5a;
+  border-radius: 3px;
+}
+
+.equation-gallery-plus {
+  font-size: 27px;
+  line-height: 1;
+  color: var(--word-accent, #185abd);
+  font-weight: 300;
+}
+
+.equation-gallery-saved {
+  margin-top: 8px;
+  border-top: 1px solid #444444;
+  padding-top: 5px;
+}
+
+.equation-gallery-heading {
+  font-size: 11px;
+  color: #a0a0a0;
+  padding: 2px 3px 5px;
+}
+
+/* ---------------- structure menus ---------------- */
+
+.equation-structure-menu {
+  max-height: 410px;
+  overflow: auto;
+  padding: 5px 3px;
+}
+
+.equation-structure-section + .equation-structure-section {
+  margin-top: 3px;
+}
+
+.equation-structure-heading {
+  font-size: 11px;
+  color: #a0a0a0;
+  padding: 6px 4px 3px;
+  border-bottom: 1px solid #444444;
+  margin-bottom: 3px;
+}
+
+.equation-structure-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  padding: 3px 0 5px;
+}
+
+.equation-structure-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  min-height: 58px;
+  padding: 5px 3px 3px;
+  border: 1px solid #4a4a4a;
+  border-radius: 3px;
+  background: #2b2b2b;
+  cursor: pointer;
+  color: #ededed;
+}
+
+.equation-structure-card:hover {
+  background: #3a3a3a;
+  border-color: var(--word-accent, #185abd);
+}
+
+.equation-structure-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 27px;
+  overflow: hidden;
+}
+
+.equation-structure-preview .equation-render {
+  font-size: 14px;
+  color: #ededed;
+}
+
+.equation-structure-caption {
+  font-size: 9px;
+  line-height: 1.1;
+  text-align: center;
+  color: #a0a0a0;
+}
+
+/* ---------------- context menu ---------------- */
+
+.equation-ctx {
+  position: fixed;
+  z-index: 1200;
+  min-width: 214px;
+  padding: 4px;
+  background: #2b2b2b;
+  border: 1px solid #4a4a4a;
+  border-radius: 5px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
+  font-size: 12.5px;
+  color: #ededed;
+}
+
+.equation-ctx-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 6px 9px;
+  border-radius: 3px;
+  text-align: left;
+  cursor: pointer;
+  color: #ededed;
+  font-size: 12.5px;
+}
+
+.equation-ctx-item:hover:not(:disabled) {
+  background: #3d3d3d;
+}
+
+.equation-ctx-item.active {
+  background: #1f4a7a;
+}
+
+.equation-ctx-item:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.equation-ctx-sep {
+  height: 1px;
+  background: #444444;
+  margin: 4px 2px;
+}
+
+.equation-ctx-subwrap {
+  position: relative;
+}
+
+.equation-ctx-arrow {
+  color: #a0a0a0;
+  font-size: 10px;
+}
+
+.equation-ctx-sub {
+  position: absolute;
+  left: 100%;
+  top: -4px;
+  min-width: 178px;
+  padding: 4px;
+  background: #2b2b2b;
+  border: 1px solid #4a4a4a;
+  border-radius: 5px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
+}
+
+/* ---------------- save dialog ---------------- */
+
+.equation-save-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1300;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.equation-save-dialog {
+  width: 350px;
+  padding: 16px 18px 14px;
+  background: #2b2b2b;
+  border: 1px solid #4a4a4a;
+  border-radius: 8px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
+  color: #ededed;
+  font-size: 13px;
+}
+
+.equation-save-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.equation-save-label {
+  display: block;
+  font-size: 12px;
+  color: #a0a0a0;
+  margin-bottom: 4px;
+}
+
+.equation-save-input {
+  width: 100%;
+  height: 30px;
+  padding: 0 8px;
+  border: 1px solid #5a5a5a;
+  border-radius: 3px;
+  font: inherit;
+  color: #ededed;
+  background: #1f1f1f;
+}
+
+.equation-save-input:focus {
+  outline: 2px solid var(--word-accent, #185abd);
+  outline-offset: 0;
+}
+
+.equation-save-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.equation-dialog-btn {
+  min-width: 74px;
+  height: 30px;
+  padding: 0 12px;
+  border: 1px solid #555555;
+  border-radius: 3px;
+  background: #333333;
+  color: #ededed;
+  cursor: pointer;
+  font-size: 12.5px;
+}
+
+.equation-dialog-btn:hover {
+  background: #3d3d3d;
+}
+
+.equation-dialog-btn.primary {
+  background: var(--word-accent, #185abd);
+  border-color: var(--word-accent, #185abd);
+  color: #fff;
+}
+
+.equation-dialog-btn.primary:hover {
+  background: var(--word-accent-dark, #0f4a9c);
+}
+
+/* ---------------- print/read ---------------- */
+
+@media print {
+  .equation-node {
+    border-color: transparent !important;
+    background: transparent !important;
+  }
+}

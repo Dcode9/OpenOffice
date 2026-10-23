@@ -1,0 +1,10 @@
+import puppeteer from 'puppeteer-core'
+const b=await puppeteer.launch({executablePath:'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',headless:true,args:['--no-sandbox']})
+const p=await b.newPage(); await p.setViewport({width:1440,height:900})
+await p.goto('http://localhost:5173',{waitUntil:'domcontentloaded'}); await p.waitForSelector('.ribbon-content'); await new Promise(r=>setTimeout(r,400))
+await p.click('.ProseMirror p:first-child')
+console.log('sel',await p.evaluate(()=>{const e=window.__editor;const {$from}=e.state.selection;return {from:$from.pos,start:$from.start(),end:$from.end(),text:$from.parent.textContent.slice(0,30)}}))
+await p.evaluate(()=>document.querySelector('.style-more')?.click()); await new Promise(r=>setTimeout(r,200))
+await p.evaluate(()=>[...document.querySelectorAll('.popover .menu-item')].find(e=>e.textContent.trim()==='Title')?.click()); await new Promise(r=>setTimeout(r,400))
+console.log(await p.evaluate(()=>window.__editor.getHTML().slice(0,260)))
+await b.close()

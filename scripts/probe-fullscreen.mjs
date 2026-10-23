@@ -1,0 +1,11 @@
+import puppeteer from "puppeteer-core";
+const b=await puppeteer.launch({executablePath:"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",headless:true,args:["--no-sandbox"]});
+const p=await b.newPage(); await p.setViewport({width:1440,height:900});
+await p.evaluateOnNewDocument(()=>{window.__fsCalls=0;window.__fsArgs=[];const orig=Element.prototype.requestFullscreen;Element.prototype.requestFullscreen=function(...a){window.__fsCalls++;window.__fsArgs.push(a);try{const r=orig.apply(this,a);if(r&&r.catch)r.catch(e=>window.__fsReject=String(e));return r}catch(e){window.__fsReject=String(e);throw e}}});
+await p.goto("http://localhost:5173",{waitUntil:"networkidle0",timeout:60000}); await new Promise(r=>setTimeout(r,500));
+await p.evaluate(()=>[...document.querySelectorAll(".ribbon-tab")].find(x=>x.textContent.trim()==="View")?.click()); await new Promise(r=>setTimeout(r,250));
+console.log("enabled",await p.evaluate(()=>document.fullscreenEnabled));
+const el=await p.$(".rb-big[title='Full Screen']")||await p.evaluateHandle(()=>[...document.querySelectorAll(".rb-big")].find(x=>x.textContent.trim()==="Full Screen")); 
+await el.click(); await new Promise(r=>setTimeout(r,800));
+console.log(await p.evaluate(()=>({calls:window.__fsCalls,args:window.__fsArgs,reject:window.__fsReject,fs:!!document.fullscreenElement,toast:document.querySelector(".toast")?.textContent})));
+await b.close();

@@ -1,0 +1,40 @@
+{
+  "bulletMenu": "BULLET LIBRARY\n•\nSolid circle\n○\nOpen circle\n▪\nSquare\n◆\nDiamond\n➢\nArrow\n✓\nCheck mark\n★\nStar\n✿\nFlower\nNone\nDefine New Bullet…",
+  "squareClicked": true,
+  "bulletAttrs": {
+    "active": true,
+    "attrs": {
+      "bulletStyle": "square",
+      "bulletSymbol": null,
+      "bulletFont": null
+    }
+  },
+  "numberMenu": "NUMBERING LIBRARY\n1.\n1, 2, 3\n1)\n1), 2), 3)\na.\na, b, c\nA.\nA, B, C\ni.\ni, ii, iii\nI.\nI, II, III\nNone\nDefine New Number Format…",
+  "numberAttrs": {
+    "active": true,
+    "attrs": {
+      "start": 1,
+      "type": null,
+      "numberStyle": "decimal-paren"
+    },
+    "html": "<ol start=\"1\" data-number-style=\"decimal-paren\"><li><p>Welcome to OpenOffice</p></li></ol><p>A Word-compatible editor for the web</p><p>This document behaves like Microsoft Word: use the <strong>Ribbon</strong> above to format text, insert tables and pictures, and lay out pages. Everything here works — try it.</p><p>Getting started</p><p>Select some text and apply a <strong>Style</strong> from the Home tab, or make it <em>italic</em>, <span style=\"text-decoration: underline;\">underlined</span>, <s>struck through</s>, or add a <span style=\"color: rgb(192, 0, 0);\">c</span><span style=\"color: rgb(237, 125, 49);\">o</span><span style=\"color: rgb(112, 173, 71);\">l</span><span style=\"color: rgb(43, 87, 154);\">o</span><span style=\"color: rgb(112, 48, 160);\">r</span>. You can also use <mark data-color=\"#ffff00\" style=\"background-color: rgb(255, 255, 0); color: inherit;\">highlighting</mark>, super/subscripts like E = mc<sup>2</sup> and H<sub>2</sub>O, and change fonts and sizes from the Font group.</p><ul><li><p>Bulleted and numbered lists</p></li><li><p>Tables, images, and links</p></li><li><p>Page layout, margins, orientation, and columns</p></li></ul><p>Save your work</p><p>Open the <strong>File</strong> tab to create, open, save, and print documents. Saving writes a real <code>.docx</code> file you can open in Microsoft Word.</p><p>\"The best way to predict the future is to invent it.\" — Alan Kay</p><p>Press Ctrl+F to find and replace, or Ctrl+S to save.</p>"
+  },
+  "underlineMenu": "UNDERLINE STYLE\nNone\nSingle\nDouble\nThick\nDotted\nDashed\nDot-Dash\nDot-Dot-Dash\nWave\nUNDERLINE COLOR\nMore Underlines…",
+  "underlineAttrs": {
+    "active": true,
+    "attrs": {
+      "underlineStyle": "double",
+      "underlineColor": null
+    },
+    "html": "<ol start=\"1\" data-number-style=\"decimal-paren\"><li><p>Welcome to <span data-underline-style=\"double\" style=\"text-decoration: underline double;\">OpenOf</span>fice</p></li></ol><p>A Word-compatible editor for the web</p><p>This document behaves like Microsoft Word: use the <strong>Ribbon</strong> above to format text, insert tables and pictures, and lay out pages. Everything here works — try it.</p><p>Getting started</p><p>Select some text and apply a <strong>Style</strong> from the Home tab, or make it <em>italic</em>, <span style=\"text-decoration: underline;\">underlined</span>, <s>struck through</s>, or add a <span style=\"color: rgb(192, 0, 0);\">c</span><span style=\"color: rgb(237, 125, 49);\">o</span><span style=\"color: rgb(112, 173, 71);\">l</span><span style=\"color: rgb(43, 87, 154);\">o</span><span style=\"color: rgb(112, 48, 160);\">r</span>. You can also use <mark data-color=\"#ffff00\" style=\"background-color: rgb(255, 255, 0); color: inherit;\">highlighting</mark>, super/subscripts like E = mc<sup>2</sup> and H<sub>2</sub>O, and change fonts and sizes from the Font group.</p><ul><li><p>Bulleted and numbered lists</p></li><li><p>Tables, images, and links</p></li><li><p>Page layout, margins, orientation, and columns</p></li></ul><p>Save your work</p><p>Open the <strong>File</strong> tab to create, open, save, and print documents. Saving writes a real <code>.docx</code> file you can open in Microsoft Word.</p><p>\"The best way to predict the future is to invent it.\" — Alan Kay</p><p>Press Ctrl+F to find and replace, or Ctrl+S to save.</p>"
+  },
+  "multiDialog": "Define New Multilevel List\nList level:\nLevel 1\nLevel 2\nLevel 3\nLevel 4\nLevel 5\nLevel 6\nLevel 7\nLevel 8\nLevel 9\nNumber style:\n1, 2, 3\na, b, c\nA, B, C\ni, ii, iii\nI, II, III\nIndent at (in):\nPreview\n1.Level 1 item\n2.Level 1 item\n3.Level 1 item\nOK\nCancel",
+  "underlineComputed": {
+    "attr": "double",
+    "style": "text-decoration: underline double;",
+    "computed": "underline double",
+    "line": "underline",
+    "decoStyle": "double"
+  },
+  "errors": []
+}
