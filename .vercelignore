@@ -1,0 +1,8 @@
+node_modules
+dist
+research
+verify
+scripts
+downloads
+dev.log
+*.log
